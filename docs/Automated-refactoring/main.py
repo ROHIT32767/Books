@@ -12,7 +12,7 @@ load_dotenv()
 config = dotenv_values(".env")
 client = OpenAI(api_key=os.environ.get(config['OPENAI_API_KEY']))
 
-github_token = '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'
+github_token = ""
 file_path = 'books-core/src/main/java/com/sismics/books/core/dao/jpa/UserDao.java'
 repo_url = 'https://github.com/serc-courses/se-project-1--_18'
 repo_owner = 'serc-courses'
