@@ -1,0 +1,446 @@
+@startuml user-management-system
+
+abstract class BaseResource {
+    # request: HttpServletRequest
+    # appKey: String
+    # principal: IPrincipal
+
+    # {abstract} authenticate(): boolean
+    # {abstract} checkBaseFunction(baseFunction: BaseFunction): void
+    # {abstract} hasBaseFunction(baseFunction: BaseFunction): boolean
+}
+IPrincipal "1" --* "1" BaseResource
+BaseFunction <.. BaseResource : uses
+UserPrincipal <.. BaseResource : uses
+
+class UserResource extends BaseResource {
+    + login(username :String, password :String, remember :boolean) :void
+    + logout() :void
+    + info() :void
+    + update(password :String, email :String, theme :String, locale :String, first_connection :Boolean) :void
+    + update(username :String, password :String, email :String, theme :String, locale :String) :void
+    + session() :void
+    + deleteSession() :void
+    + list(limit :Integer, offset :Integer, sort_column :Integer, asc :Boolean)
+    + view(username :String) :void
+    + delete() :void
+    + delete(username :String) :void
+    + register(username :String, password :String, email :String, localeId :String) :void
+    + checkUsername(username :String) :Boolean
+}
+UserResource ..> User :uses
+UserResource ..> UserDao :uses
+UserResource ..> Constants :uses
+UserResource ..> AuthenticationTokenDao :uses
+UserResource ..> AuthenticationToken :uses
+UserResource ..> RoleBaseFunctionDao :uses
+
+class Constants {
+    + {static} DEFAULT_LOCALE_ID: String = "en"
+    + {static} DEFAULT_TIMEZONE_ID: String = "Europe/London"
+    + {static} DEFAULT_THEME_ID: String = "default.less"
+    + {static} DEFAULT_ADMIN_PASSWORD: String = "$2a$05$6Ny3TjrW3aVAL1or2SlcR.fhuDgPKp5jp.P9fBXwVNePgeLqb4i3C"
+    + {static} DEFAULT_USER_ROLE: String = "user"
+}
+
+'(TODO) SortCriteria
+class UserDao {
+    + authenticate(username :String, password :String) :String
+    '(TODO) User
+    + create(user :User) :String
+    '(TODO) User
+    + update(user :User) :User
+    '(TODO) User
+    + updatePassword(user :User) :User
+    '(TODO) User
+    + getById(id :String) :User
+    '(TODO) User
+    + getActiveByUsername(username :String) :User
+    '(TODO) User
+    + getActiveByPasswordResetKey(passwordResetKey :String) :User
+    '(TODO) User
+    + delete(username :String) :void
+    '(TODO) User
+    # hashPassword(password :String) :String
+    + findAll(paginatedList :PaginatedList<UserDto>, sortCriteria :SortCriteria)
+}
+UserDao ..> User :uses
+UserDao ..> UserDto :uses
+
+class LocaleDao {
+    + getById(String id): Locale
+    + findAll(): List<Locale>
+}
+LocaleDao ..> Locale :uses
+
+class RoleBaseFunctionDao {
+    + findByRoleId(roleId: String): Set<String>
+}
+RoleBaseFunctionDao ..> RoleBaseFunction :uses
+
+class AuthenticationTokenDao {
+    + get(id :String) :AuthenticationToken
+    + create(authenticationToken :AuthenticationToken) :String
+    + delete(authenticationTokenId :String) :void
+    + deleteOldSessionToken(userId :String) :void
+    + updateLastConnectionDate(id :String) :void
+    + getByUserId(userId :String) :List<AuthenticationToken>
+    + deleteByUserId(userId :String, id :String) :void
+}
+AuthenticationTokenDao ..> AuthenticationToken :uses
+
+class AuthenticationToken {
+    -id: String
+    -userId: String
+    -longLasted: boolean
+    -creationDate: Date
+    -lastConnectionDate: Date
+
+    +getId() :String
+    +setId(id :String) :void
+    +getUserId() :String
+    +setUserId(userId :String) :void
+    +isLongLasted() :boolean
+    +setLongLasted(longLasted :boolean) :void
+    +getCreationDate() :Date
+    +setCreationDate(creationDate :Date) :void
+    +getLastConnectionDate() :Date
+    +setLastConnectionDate(lastConnectionDate :Date) :void
+    +toString() :String
+}
+AuthenticationToken "0..*" --* "1" User : Generated For
+
+class UserContactCriteria {
+    - appId: String
+    - userId: String
+    - query: String
+    + getAppId(): String
+    + setAppId(appId: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getQuery(): String
+    + setQuery(query: String): void
+}
+UserContactCriteria "0..*" -- "1" User
+
+class UserContactDto {
+    - id: String
+    - externalId: String
+    - fullName: String
+    + getId(): String
+    + setId(id: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getFullName(): String
+    + setFullName(fullName: String): void
+}
+UserContactDto "0..*" -- "1" User
+UserContactDto "1" -- "1" UserContact
+
+class UserAppDto {
+    - id: String
+    - userId: String
+    - appId: String
+    - accessToken: String
+    - username: String
+    - sharing: boolean
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAppId(): String
+    + setAppId(appId: String): void
+    + getAccessToken(): String
+    + setAccessToken(accessToken: String): void
+    + getUsername(): String
+    + setUsername(username: String): void
+    + isSharing(): boolean
+    + setSharing(sharing: boolean): void
+}
+UserAppDto "0..*" -- "1" User
+UserAppDto "1" -- "1" UserApp
+
+class UserDto {
+    - id: String
+    - localeId: String
+    - username: String
+    - email: String
+    - createTimestamp: Long
+    + getId(): String
+    + setId(id: String): void
+    + getLocaleId(): String
+    + setLocaleId(localeId: String): void
+    + getUsername(): String
+    + setUsername(username: String): void
+    + getEmail(): String
+    + setEmail(email: String): void
+    + getCreateTimestamp(): Long
+    + setCreateTimestamp(createTimestamp: Long): void
+}
+UserDto "1" -- "1" User
+
+class UserAppDao {
+    + create(userApp: UserApp): String
+    + delete(id: String): void
+    + deleteByUserIdAndAppId(userId: String, appId: String): void
+    + getActiveById(id: String): UserApp
+    + getActiveByUserIdAndAppId(userId: String, appId: String): UserApp
+    + findByUserId(userId: String): List<UserAppDto>
+    + findConnectedByUserId(userId: String): List<UserAppDto>
+    + findByAppId(appId: String): List<UserAppDto>
+    + update(userApp: UserApp): UserApp
+}
+UserAppDao ..> UserApp :uses
+UserAppDao ..> UserAppDto :uses
+
+class UserContactDao {
+    + create(userContact: UserContact): String
+    + findByUserIdAndAppId(userId: String, appId: String): List<UserContactDto>
+    + updateByUserIdAndAppId(userId: String, appId: String): void
+    + delete(id: String): void
+    + findByCriteria(paginatedList: PaginatedList<UserContactDto>, criteria: UserContactCriteria): void
+}
+UserContactDao ..> UserContact :uses
+UserContactDao ..> UserContactDto :uses
+
+class UserAppCreatedEvent {
+    - userApp: UserApp
+    + getUserApp(): UserApp
+    + setUserApp(userApp: UserApp): void
+    + toString(): String
+}
+UserAppCreatedEvent "1" -- "1" UserApp
+
+class BaseFunction {
+    - id: String
+    + getId(): String
+    + setId(id: String): void
+    + toString(): String
+}
+BaseFunction "0..*" -- "0..*" Role
+
+class RoleBaseFunction {
+    - id: String
+    - roleId: String
+    - baseFunctionId: String
+    - createDate: Date
+    - deleteDate: Date
+    + getId(): String
+    + setId(id: String): void
+    + getRoleId(): String
+    + setRoleId(roleId: String): void
+    + getBaseFunctionId(): String
+    + setBaseFunctionId(baseFunctionId: String): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+BaseFunction "1" -- "0..*" RoleBaseFunction
+Role "1" -- "0..*" RoleBaseFunction
+
+class Role {
+    - id: String
+    - name: String
+    - createDate: Date
+    - deleteDate: Date
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+
+class UserApp {
+    - id: String
+    - userId: String
+    - appId: String
+    - accessToken: String
+    - username: String
+    - externalId: String
+    - email: String
+    - sharing: boolean
+    - createDate: Date
+    - deleteDate: Date
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAppId(): String
+    + setAppId(appId: String): void
+    + getAccessToken(): String
+    + setAccessToken(accessToken: String): void
+    + getUsername(): String
+    + setUsername(username: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getEmail(): String
+    + setEmail(email: String): void
+    + isSharing(): boolean
+    + setSharing(sharing: boolean): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+User "1" -- "0..*" UserApp
+
+class UserContact {
+    - id: String
+    - userId: String
+    - appId: String
+    - externalId: String
+    - fullName: String
+    - email: String
+    - createDate: Date
+    - updateDate: Date
+    - deleteDate: Date
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAppId(): String
+    + setAppId(appId: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getFullName(): String
+    + setFullName(fullName: String): void
+    + getEmail(): String
+    + setEmail(email: String): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getUpdateDate(): Date
+    + setUpdateDate(updateDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+User "1" -- "0..*" UserContact
+
+class User {
+    - id: String
+    - localeId: String
+    - roleId: String
+    - username: String
+    - password: String
+    - email: String
+    - theme: String
+    - firstConnection: boolean
+    - createDate: Date
+    - deleteDate: Date
+    + getId(): String
+    + setId(id: String): void
+    + getLocaleId(): String
+    + setLocaleId(localeId: String): void
+    + getRoleId(): String
+    + setRoleId(roleId: String): void
+    + getUsername(): String
+    + setUsername(username: String): void
+    + getPassword(): String
+    + setPassword(password: String): void
+    + getEmail(): String
+    + setEmail(email: String): void
+    + getTheme(): String
+    + setTheme(theme: String): void
+    + isFirstConnection(): boolean
+    + setFirstConnection(firstConnection: boolean): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+Locale "1" -- "0..*" User
+Role "1" -- "0..*" User
+
+class Locale {
+    - id: String
+    + getId(): String
+    + setId(id: String): void
+    + toString(): String
+}
+
+class LocaleResource extends BaseResource {
+    + list(): Response
+}
+LocaleResource ..> Locale :uses
+LocaleResource ..> LocaleDao :uses
+
+interface IPrincipal {
+    + isAnonymous(): boolean
+    + getId(): String
+    + getLocale(): Locale
+    + getDateTimeZone(): DateTimeZone
+    + getEmail(): String
+}
+
+class AnonymousPrincipal implements IPrincipal {
+    + {static} ANONYMOUS: String
+    - locale: Locale
+    - dateTimeZone: DateTimeZone
+    + AnonymousPrincipal()
+    + getId(): String
+    + getName(): String
+    + isAnonymous(): boolean
+    + getLocale(): Locale
+    + setLocale(locale: Locale): void
+    + getDateTimeZone(): DateTimeZone
+    + setDateTimeZone(dateTimeZone: DateTimeZone): void
+    + getEmail(): String
+}
+' IPrincipal <|-- AnonymousPrincipal
+
+class UserPrincipal implements IPrincipal {
+    - id: String
+    - name: String
+    - locale: Locale
+    - dateTimeZone: DateTimeZone
+    - email: String
+    - baseFunctionSet: Set<String>
+    + UserPrincipal(id: String, name: String)
+    + isAnonymous(): boolean
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getLocale(): Locale
+    + setLocale(locale: Locale): void
+    + getDateTimeZone(): DateTimeZone
+    + setDateTimeZone(dateTimeZone: DateTimeZone): void
+    + getEmail(): String
+    + setEmail(email: String): void
+    + getBaseFunctionSet(): Set<String>
+    + setBaseFunctionSet(baseFunctionSet: Set<String>): void
+}
+UserPrincipal "0..*" -- "1" User
+UserPrincipal "0..*" -- "0..*" BaseFunction
+' IPrincipal <|-- UserPrincipal
+
+class TokenBasedSecurityFilter {
+    - {static} log: Logger
+    - {static} COOKIE_NAME: String
+    - {static} PRINCIPAL_ATTRIBUTE: String
+    - {static} TOKEN_LONG_LIFETIME: int
+    - {static} TOKEN_SESSION_LIFETIME: int
+    
+    + init(FilterConfig): void
+    + destroy(): void
+    + doFilter(ServletRequest, ServletResponse, FilterChain): void
+    + isTokenExpired(AuthenticationToken): boolean
+    + injectAuthenticatedUser(HttpServletRequest, User): void
+    + injectAnonymousUser(HttpServletRequest): void
+}
+TokenBasedSecurityFilter  ..>  AuthenticationTokenDao
+TokenBasedSecurityFilter  ..>  UserDao
+TokenBasedSecurityFilter  ..>  RoleBaseFunctionDao
+TokenBasedSecurityFilter "1" *-- "1" UserPrincipal
+TokenBasedSecurityFilter "1" *-- "1" AnonymousPrincipal
+TokenBasedSecurityFilter  ..>  User 
+TokenBasedSecurityFilter  ..>  AuthenticationToken
+@enduml

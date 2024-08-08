@@ -1,0 +1,40 @@
+<h2>Add a Book</h2>
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add a Book by ISBN</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well well-sm">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span> Adding Book to Common Library</h3>
+              </div>
+              <div class="panel-body">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="inputIsbn">ISBN (10 or 13 numbers)</label>
+                    <input type="text" class="form-control" id="inputIsbn" ng-model="isbn" placeholder="ISBN" />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputGenre">Genre(s)</label>
+                    <input type="text" class="form-control" id="inputGenre" ng-model="genre" placeholder="Genre(s)">
+                </div>
+                <button type="button" class="btn btn-primary" ng-click="addCommonBook()">Add</button>
+                </form>
+              </div>
+            </div>
+      
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a href="#/commonbook/addmanual"><span class="glyphicon glyphicon-pencil"></span> Add Common Book Manually</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

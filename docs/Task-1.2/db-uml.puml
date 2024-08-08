@@ -1,0 +1,112 @@
+@startuml db-class-diagram
+
+class App {
+    -id: String
+}
+
+class AuthenticationToken {
+    -id: String
+    -userId: String
+    -longLasted: boolean
+    -creationDate: Date
+    -lastConnectionDate: Date
+}
+
+class BaseFunction {
+    -id: String
+}
+
+class Book {
+    -id: String
+    -title: String
+    -subtitle: String
+    -author: String
+    -description: String
+    -isbn10: String
+    -isbn13: String
+    -pageCount: Long
+    -language: String
+    -publishDate: Date
+}
+
+class Role {
+    -id: String
+    -name: String
+    -createDate: Date
+    -deleteDate: Date
+}
+
+
+class User {
+    - id: String
+    - localeId: String
+    - roleId: String
+    - username: String
+    - password: String
+    - email: String
+    - theme: String
+    - firstConnection: boolean
+    - createDate: Date
+    - deleteDate: Date
+}
+
+class UserApp {
+    - id: String
+    - userId: String
+    - appId: String
+    - accessToken: String
+    - username: String
+    - externalId: String
+    - email: String
+    - sharing: boolean
+    - createDate: Date
+    - deleteDate: Date
+}
+
+class Tag {
+    -id: String
+    -name: String
+    -userId: String
+    -createDate: Date
+    -deleteDate: Date
+    -color: String
+}
+
+class UserContact {
+    -id: String
+    -userId: String
+    -appId: String
+    -externalId: String
+    -fullName: String
+    -email: String
+    -createDate: Date
+    -updateDate: Date
+    -deleteDate: Date
+}
+
+class UserBookTag {
+    -id: String
+    -userBookId: String
+    -tagId: String
+    -serialVersionUID: long
+}
+
+class UserBook{
+    - serialVersionUID: long
+    - id: String
+    - bookId: String
+    - userId: String
+    - createDate: Date
+    - deleteDate: Date
+    - readDate: Date
+}
+
+class RoleBaseFunction {
+    -id: String
+    -roleId: String
+    -baseFunctionId: String
+    -createDate: Date
+    -deleteDate: Date
+}
+
+@enduml

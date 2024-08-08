@@ -1,0 +1,221 @@
+@startuml 
+class User {
+
+}
+
+enum OnlineSearchContentType {
+    AUDIO_BOOKS
+    PODCASTS
+}
+
+enum OnlineSearchContentProvider {
+    I_TUNES,
+    SPOTIFY,
+}
+
+class OnlineSearchCriteria {
+    - contentType: OnlineSearchContentType
+    - query: String
+    - provider: OnlineSearchContentProvider
+
+    + getContentType(): OnlineSearchContentType
+    + setContentType(contentType: OnlineSearchContentType): void
+    + getQuery(): String
+    + setQuery(query: String): void
+    + getProvider(): OnlineSearchContentProvider
+    + setProvider(provider: OnlineSearchContentProvider): void
+}
+OnlineSearchCriteria ..> OnlineSearchContentProvider :uses
+OnlineSearchCriteria ..> OnlineSearchContentType :uses
+
+class AudioBook {
+    - id: String
+    - externalId: String
+    - name: String
+    - authors: String
+    - thumbnailUrl: String
+    - description: String
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getAuthors(): String
+    + setAuthors(authors: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDescription(): String
+    + setDescription(description: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getUrl(): String
+    + setUrl(url: String): void
+}
+AudioBook "0..*" -- "0..*" User
+
+class AudioBookDao {
+    + create(audioBook: AudioBook): String
+    + delete(audioBookId: String): void
+    + findById(id: String): AudioBook
+    + findByExternalId(externalId: String): AudioBook
+    + createIfNotExistAndReturn(audioBook: AudioBook): AudioBook
+}
+AudioBookDao ..> AudioBook :uses
+
+class Podcast {
+    - id: String
+    - externalId: String
+    - name: String
+    - thumbnailUrl: String
+    - duration: float
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDuration(): float
+    + setDuration(duration: float): void
+    + getUrl(): String
+    + setUrl(url: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+}
+Podcast "0..*" -- "0..*" User
+
+class PodcastDao {
+    + create(podcast: Podcast): String
+    + findById(id: String): Podcast
+    + delete(podcastId: String): void
+    + findByExternalId(externalId: String): Podcast
+    + createIfNotExistAndReturn(podcast: Podcast): Podcast
+}
+PodcastDao ..> Podcast :uses
+
+class UserAudioBook {
+    - id: String
+    - userId: String
+    - audioBookId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAudioBookId(): String
+    + setAudioBookId(audioBookId: String): void
+}
+User "1" *-- "0..*" UserAudioBook
+AudioBook "1" *-- "0..*" UserAudioBook
+
+class UserAudioBookDao {
+    + create(userAudiobook: UserAudioBook): String
+    + delete(userId: String, audioBookId: String): void
+    + findAudiobooksByUserId(userId: String): List<String>
+}
+UserAudioBookDao ..> UserAudioBook :uses
+
+class UserPodcast {
+    - id: String
+    - userId: String
+    - podcastId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getPodcastId(): String
+    + setPodcastId(podcastId: String): void
+}
+
+User "1" *-- "0..*" UserPodcast
+Podcast "1" *-- "0..*" UserPodcast
+
+class UserPodcastDao {
+    + create(userPodcast: UserPodcast): String
+    + findPodcastsByUserId(userId: String): List<String>
+    + delete(userId: String, podcastId: String): void
+}
+UserPodcastDao ..> UserPodcast :uses
+
+interface OnlineResourceFactory {
+    + createAudioBooks(itemObject: JSONObject): AudioBook
+    + createPodcasts(itemObject: JSONObject): Podcast
+}
+
+class SpotifyResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+SpotifyResourceFactory ..> AudioBook :uses
+SpotifyResourceFactory ..> Podcast :uses
+
+class iTunesResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+iTunesResourceFactory ..> AudioBook :uses
+iTunesResourceFactory ..> Podcast :uses
+
+interface OnlineSearchStrategy {
+  + fetchResults(criteria :OnlineSearchCriteria) :JSONArray
+}
+
+class SpotifySearchStrategy implements OnlineSearchStrategy {
+    - accessToken: String
+    - limit: int
+    - offset: int
+    - market: String
+    - TOKEN_URL: String
+    - CLIENT_ID: String
+    - CLIENT_SECRET: String
+
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+    + obtainAccessToken(): void
+}
+
+class iTunesSearchStrategy implements OnlineSearchStrategy {
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+}
+
+
+class OnlineSearchContext {
+    - searchStrategy: OnlineSearchStrategy
+
+    + setSearchStrategy(searchStrategy: OnlineSearchStrategy): void
+    + fetchResults(criteria: OnlineSearchCriteria): List<?>
+}
+OnlineSearchContext ..> OnlineSearchStrategy :uses
+OnlineSearchContext ..> OnlineResourceFactory :uses
+
+class FavouritesResource {
+    + favouriteAudiobook(audioBookId: String): Response
+    + unfavouriteAudiobook(audioBookId: String): Response
+    + getFavouriteAudiobooks(): Response
+    + favouritePodcast(podcastId: String): Response
+    + unfavouritePodcast(podcastId: String): Response
+    + getFavouritePodcasts(): Response
+}
+FavouritesResource ..> UserPodcastDao :uses
+FavouritesResource ..> UserAudioBookDao :uses
+
+class OnlineIntegrationResource {
+    + connect(service: String, search: String, contentType: String): Response
+}
+OnlineIntegrationResource ..> OnlineSearchContext :uses
+OnlineIntegrationResource ..> OnlineSearchCriteria :uses
+
+' OnlineSearchContext --> OnlineSearchStrategy
+' OnlineSearchContext --> OnlineSearchCriteria
+' OnlineSearchStrategy <|.. SpotifyResourceFactory
+' OnlineSearchStrategy <|.. iTunesResourceFactory
+' OnlineSearchCriteria -right-> OnlineSearchContentProvider
+' OnlineSearchCriteria -right-> OnlineSearchContentType
+
+@enduml

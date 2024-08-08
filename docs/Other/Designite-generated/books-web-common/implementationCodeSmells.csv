@@ -1,0 +1,23 @@
+Project Name,Package Name,Type Name,Method Name,Code Smell
+books-web-common,com.sismics.books.rest.util,TestValidationUtil,testValidateHttpUrlFail,Empty catch clause
+books-web-common,com.sismics.books.rest.util,TestValidationUtil,testValidateHttpUrlFail,Empty catch clause
+books-web-common,com.sismics.books.rest,BaseJerseyTest,setUp,Long Statement
+books-web-common,com.sismics.books.rest,BaseJerseyTest,setUp,Magic Number
+books-web-common,com.sismics.books.rest.descriptor,JerseyTestWebAppDescriptorFactory,build,Long Statement
+books-web-common,com.sismics.util.filter,RequestContextFilter,init,Magic Number
+books-web-common,com.sismics.util.filter,RequestContextFilter,doFilter,Magic Number
+books-web-common,com.sismics.util.filter,RequestContextFilter,doFilter,Magic Number
+books-web-common,com.sismics.util.filter,RequestContextFilter,doFilter,Magic Number
+books-web-common,com.sismics.util.filter,RequestContextFilter,doFilter,Magic Number
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,doFilter,Complex Method
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,isTokenExpired,Long Statement
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,isTokenExpired,Magic Number
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,isTokenExpired,Magic Number
+books-web-common,com.sismics.rest.util,ValidationUtil,validateLength,Long Parameter List
+books-web-common,com.sismics.rest.util,ValidationUtil,validateLength,Long Statement
+books-web-common,com.sismics.rest.util,ValidationUtil,validateLength,Long Statement
+books-web-common,com.sismics.rest.util,ValidationUtil,validateHexColor,Magic Number
+books-web-common,com.sismics.rest.util,ValidationUtil,validateHexColor,Magic Number
+books-web-common,com.sismics.rest.util,ValidationUtil,validateAlphanumeric,Long Statement
+books-web-common,com.sismics.rest.exception,ForbiddenClientException,ForbiddenClientException,Long Statement
+books-web-common,com.sismics.rest.exception,ServerException,ServerException,Long Statement

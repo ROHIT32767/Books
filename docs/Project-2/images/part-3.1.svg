@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1708px" preserveAspectRatio="none" style="width:2788px;height:1708px;background:#FFFFFF;" version="1.1" viewBox="0 0 2788 1708" width="2788px" zoomAndPan="magnify"><defs/><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="1" fill="#F1F1F1" height="48" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64" x="858.5" y="1357.5"/><ellipse cx="873.5" cy="1373.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M876.4688,1379.1406 Q875.8906,1379.4375 875.25,1379.5781 Q874.6094,1379.7344 873.9063,1379.7344 Q871.4063,1379.7344 870.0781,1378.0938 Q868.7656,1376.4375 868.7656,1373.3125 Q868.7656,1370.1875 870.0781,1368.5313 Q871.4063,1366.875 873.9063,1366.875 Q874.6094,1366.875 875.25,1367.0313 Q875.9063,1367.1875 876.4688,1367.4844 L876.4688,1370.2031 Q875.8438,1369.625 875.25,1369.3594 Q874.6563,1369.0781 874.0313,1369.0781 Q872.6875,1369.0781 872,1370.1563 Q871.3125,1371.2188 871.3125,1373.3125 Q871.3125,1375.4063 872,1376.4844 Q872.6875,1377.5469 874.0313,1377.5469 Q874.6563,1377.5469 875.25,1377.2813 Q875.8438,1377 876.4688,1376.4219 L876.4688,1379.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="887.5" y="1378.3467">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="859.5" x2="921.5" y1="1389.5" y2="1389.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="859.5" x2="921.5" y1="1397.5" y2="1397.5"/></g><!--MD5=[1497d14023d1ab65f2cca871f45aaa79]
+class OnlineSearchContentType--><g id="elem_OnlineSearchContentType"><rect codeLine="5" fill="#F1F1F1" height="80.5938" id="OnlineSearchContentType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="214" x="2296.5" y="420"/><ellipse cx="2311.5" cy="436" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2315.6094,442 L2307.8906,442 L2307.8906,429.6094 L2315.6094,429.6094 L2315.6094,431.7656 L2310.3438,431.7656 L2310.3438,434.4375 L2315.1094,434.4375 L2315.1094,436.5938 L2310.3438,436.5938 L2310.3438,439.8438 L2315.6094,439.8438 L2315.6094,442 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="2325.5" y="440.8467">OnlineSearchContentType</text><line style="stroke:#181818;stroke-width:0.5;" x1="2297.5" x2="2509.5" y1="452" y2="452"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="2302.5" y="468.9951">AUDIO_BOOKS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="2302.5" y="485.292">PODCASTS</text><line style="stroke:#181818;stroke-width:0.5;" x1="2297.5" x2="2509.5" y1="492.5938" y2="492.5938"/></g><!--MD5=[1203613922a05ded4f600ad8ab30790f]
+class OnlineSearchContentProvider--><g id="elem_OnlineSearchContentProvider"><rect codeLine="10" fill="#F1F1F1" height="80.5938" id="OnlineSearchContentProvider" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="236" x="2545.5" y="420"/><ellipse cx="2560.5" cy="436" fill="#EB937F" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2564.6094,442 L2556.8906,442 L2556.8906,429.6094 L2564.6094,429.6094 L2564.6094,431.7656 L2559.3438,431.7656 L2559.3438,434.4375 L2564.1094,434.4375 L2564.1094,436.5938 L2559.3438,436.5938 L2559.3438,439.8438 L2564.6094,439.8438 L2564.6094,442 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="2574.5" y="440.8467">OnlineSearchContentProvider</text><line style="stroke:#181818;stroke-width:0.5;" x1="2546.5" x2="2780.5" y1="452" y2="452"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="2551.5" y="468.9951">I_TUNES,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="2551.5" y="485.292">SPOTIFY,</text><line style="stroke:#181818;stroke-width:0.5;" x1="2546.5" x2="2780.5" y1="492.5938" y2="492.5938"/></g><!--MD5=[a6bbf6531adcebe94d6b3d8a50ddb67b]
+class OnlineSearchCriteria--><g id="elem_OnlineSearchCriteria"><rect codeLine="15" fill="#F1F1F1" height="194.6719" id="OnlineSearchCriteria" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="464" x="2191.5" y="148"/><ellipse cx="2349.25" cy="164" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2352.2188,169.6406 Q2351.6406,169.9375 2351,170.0781 Q2350.3594,170.2344 2349.6563,170.2344 Q2347.1563,170.2344 2345.8281,168.5938 Q2344.5156,166.9375 2344.5156,163.8125 Q2344.5156,160.6875 2345.8281,159.0313 Q2347.1563,157.375 2349.6563,157.375 Q2350.3594,157.375 2351,157.5313 Q2351.6563,157.6875 2352.2188,157.9844 L2352.2188,160.7031 Q2351.5938,160.125 2351,159.8594 Q2350.4063,159.5781 2349.7813,159.5781 Q2348.4375,159.5781 2347.75,160.6563 Q2347.0625,161.7188 2347.0625,163.8125 Q2347.0625,165.9063 2347.75,166.9844 Q2348.4375,168.0469 2349.7813,168.0469 Q2350.4063,168.0469 2351,167.7813 Q2351.5938,167.5 2352.2188,166.9219 L2352.2188,169.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="2369.75" y="168.8467">OnlineSearchCriteria</text><line style="stroke:#181818;stroke-width:0.5;" x1="2192.5" x2="2654.5" y1="180" y2="180"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2199.5" y="190.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279" x="2211.5" y="196.9951">contentType: OnlineSearchContentType</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2199.5" y="206.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="2211.5" y="213.292">query: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="2199.5" y="223.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="2211.5" y="229.5889">provider: OnlineSearchContentProvider</text><line style="stroke:#181818;stroke-width:0.5;" x1="2192.5" x2="2654.5" y1="236.8906" y2="236.8906"/><ellipse cx="2202.5" cy="250.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="314" x="2211.5" y="253.8857">getContentType(): OnlineSearchContentType</text><ellipse cx="2202.5" cy="266.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="438" x="2211.5" y="270.1826">setContentType(contentType: OnlineSearchContentType): void</text><ellipse cx="2202.5" cy="283.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="2211.5" y="286.4795">getQuery(): String</text><ellipse cx="2202.5" cy="299.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="2211.5" y="302.7764">setQuery(query: String): void</text><ellipse cx="2202.5" cy="315.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="2211.5" y="319.0732">getProvider(): OnlineSearchContentProvider</text><ellipse cx="2202.5" cy="332.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="394" x="2211.5" y="335.3701">setProvider(provider: OnlineSearchContentProvider): void</text></g><!--MD5=[a039bf5c8bbb0026beb9828cb0f74e4c]
+class AudioBook--><g id="elem_AudioBook"><rect codeLine="30" fill="#F1F1F1" height="390.2344" id="AudioBook" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="320" x="611.5" y="866"/><ellipse cx="729.75" cy="882" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M732.7188,887.6406 Q732.1406,887.9375 731.5,888.0781 Q730.8594,888.2344 730.1563,888.2344 Q727.6563,888.2344 726.3281,886.5938 Q725.0156,884.9375 725.0156,881.8125 Q725.0156,878.6875 726.3281,877.0313 Q727.6563,875.375 730.1563,875.375 Q730.8594,875.375 731.5,875.5313 Q732.1563,875.6875 732.7188,875.9844 L732.7188,878.7031 Q732.0938,878.125 731.5,877.8594 Q730.9063,877.5781 730.2813,877.5781 Q728.9375,877.5781 728.25,878.6563 Q727.5625,879.7188 727.5625,881.8125 Q727.5625,883.9063 728.25,884.9844 Q728.9375,886.0469 730.2813,886.0469 Q730.9063,886.0469 731.5,885.7813 Q732.0938,885.5 732.7188,884.9219 L732.7188,887.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="750.25" y="886.8467">AudioBook</text><line style="stroke:#181818;stroke-width:0.5;" x1="612.5" x2="930.5" y1="898" y2="898"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="908.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="631.5" y="914.9951">id: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="924.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="631.5" y="931.292">externalId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="941.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="631.5" y="947.5889">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="957.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="631.5" y="963.8857">authors: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="973.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="631.5" y="980.1826">thumbnailUrl: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="990.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="631.5" y="996.4795">description: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="619.5" y="1006.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="631.5" y="1012.7764">url: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="612.5" x2="930.5" y1="1020.0781" y2="1020.0781"/><ellipse cx="622.5" cy="1033.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="631.5" y="1037.0732">getId(): String</text><ellipse cx="622.5" cy="1050.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="631.5" y="1053.3701">setId(id: String): void</text><ellipse cx="622.5" cy="1066.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="631.5" y="1069.667">getAuthors(): String</text><ellipse cx="622.5" cy="1082.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="631.5" y="1085.9639">setAuthors(authors: String): void</text><ellipse cx="622.5" cy="1098.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="631.5" y="1102.2607">getThumbnailUrl(): String</text><ellipse cx="622.5" cy="1115.2109" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="631.5" y="1118.5576">setThumbnailUrl(thumbnailUrl: String): void</text><ellipse cx="622.5" cy="1131.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="631.5" y="1134.8545">getDescription(): String</text><ellipse cx="622.5" cy="1147.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="631.5" y="1151.1514">setDescription(description: String): void</text><ellipse cx="622.5" cy="1164.1016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="631.5" y="1167.4482">getName(): String</text><ellipse cx="622.5" cy="1180.3984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="631.5" y="1183.7451">setName(name: String): void</text><ellipse cx="622.5" cy="1196.6953" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="631.5" y="1200.042">getExternalId(): String</text><ellipse cx="622.5" cy="1212.9922" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="631.5" y="1216.3389">setExternalId(externalId: String): void</text><ellipse cx="622.5" cy="1229.2891" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="631.5" y="1232.6357">getUrl(): String</text><ellipse cx="622.5" cy="1245.5859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="631.5" y="1248.9326">setUrl(url: String): void</text></g><!--MD5=[4ca6370d24f53d591a5f9a290f17e597]
+class AudioBookDao--><g id="elem_AudioBookDao"><rect codeLine="56" fill="#F1F1F1" height="129.4844" id="AudioBookDao" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="459" x="7" y="611"/><ellipse cx="180.75" cy="627" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M183.7188,632.6406 Q183.1406,632.9375 182.5,633.0781 Q181.8594,633.2344 181.1563,633.2344 Q178.6563,633.2344 177.3281,631.5938 Q176.0156,629.9375 176.0156,626.8125 Q176.0156,623.6875 177.3281,622.0313 Q178.6563,620.375 181.1563,620.375 Q181.8594,620.375 182.5,620.5313 Q183.1563,620.6875 183.7188,620.9844 L183.7188,623.7031 Q183.0938,623.125 182.5,622.8594 Q181.9063,622.5781 181.2813,622.5781 Q179.9375,622.5781 179.25,623.6563 Q178.5625,624.7188 178.5625,626.8125 Q178.5625,628.9063 179.25,629.9844 Q179.9375,631.0469 181.2813,631.0469 Q181.9063,631.0469 182.5,630.7813 Q183.0938,630.5 183.7188,629.9219 L183.7188,632.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="201.25" y="631.8467">AudioBookDao</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="465" y1="643" y2="643"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="465" y1="651" y2="651"/><ellipse cx="18" cy="664.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="261" x="27" y="667.9951">create(audioBook: AudioBook): String</text><ellipse cx="18" cy="680.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="27" y="684.292">delete(audioBookId: String): void</text><ellipse cx="18" cy="697.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="209" x="27" y="700.5889">findById(id: String): AudioBook</text><ellipse cx="18" cy="713.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="27" y="716.8857">findByExternalId(externalId: String): AudioBook</text><ellipse cx="18" cy="729.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="433" x="27" y="733.1826">createIfNotExistAndReturn(audioBook: AudioBook): AudioBook</text></g><!--MD5=[148499297b6f36812855c8d7dd33a717]
+class Podcast--><g id="elem_Podcast"><rect codeLine="65" fill="#F1F1F1" height="341.3438" id="Podcast" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="320" x="966.5" y="890.5"/><ellipse cx="1094.25" cy="906.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1097.2188,912.1406 Q1096.6406,912.4375 1096,912.5781 Q1095.3594,912.7344 1094.6563,912.7344 Q1092.1563,912.7344 1090.8281,911.0938 Q1089.5156,909.4375 1089.5156,906.3125 Q1089.5156,903.1875 1090.8281,901.5313 Q1092.1563,899.875 1094.6563,899.875 Q1095.3594,899.875 1096,900.0313 Q1096.6563,900.1875 1097.2188,900.4844 L1097.2188,903.2031 Q1096.5938,902.625 1096,902.3594 Q1095.4063,902.0781 1094.7813,902.0781 Q1093.4375,902.0781 1092.75,903.1563 Q1092.0625,904.2188 1092.0625,906.3125 Q1092.0625,908.4063 1092.75,909.4844 Q1093.4375,910.5469 1094.7813,910.5469 Q1095.4063,910.5469 1096,910.2813 Q1096.5938,910 1097.2188,909.4219 L1097.2188,912.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="1114.75" y="911.3467">Podcast</text><line style="stroke:#181818;stroke-width:0.5;" x1="967.5" x2="1285.5" y1="922.5" y2="922.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="933.1484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="986.5" y="939.4951">id: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="949.4453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="986.5" y="955.792">externalId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="965.7422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="986.5" y="972.0889">name: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="982.0391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="986.5" y="988.3857">thumbnailUrl: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="998.3359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="986.5" y="1004.6826">duration: float</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="974.5" y="1014.6328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="986.5" y="1020.9795">url: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="967.5" x2="1285.5" y1="1028.2813" y2="1028.2813"/><ellipse cx="977.5" cy="1041.9297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="986.5" y="1045.2764">getId(): String</text><ellipse cx="977.5" cy="1058.2266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="986.5" y="1061.5732">setId(id: String): void</text><ellipse cx="977.5" cy="1074.5234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="986.5" y="1077.8701">getName(): String</text><ellipse cx="977.5" cy="1090.8203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="986.5" y="1094.167">setName(name: String): void</text><ellipse cx="977.5" cy="1107.1172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="986.5" y="1110.4639">getThumbnailUrl(): String</text><ellipse cx="977.5" cy="1123.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="986.5" y="1126.7607">setThumbnailUrl(thumbnailUrl: String): void</text><ellipse cx="977.5" cy="1139.7109" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="986.5" y="1143.0576">getDuration(): float</text><ellipse cx="977.5" cy="1156.0078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="986.5" y="1159.3545">setDuration(duration: float): void</text><ellipse cx="977.5" cy="1172.3047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="986.5" y="1175.6514">getUrl(): String</text><ellipse cx="977.5" cy="1188.6016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="986.5" y="1191.9482">setUrl(url: String): void</text><ellipse cx="977.5" cy="1204.8984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="986.5" y="1208.2451">getExternalId(): String</text><ellipse cx="977.5" cy="1221.1953" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="986.5" y="1224.542">setExternalId(externalId: String): void</text></g><!--MD5=[68d56db5e6a1d1b076d2d09d162ec3bc]
+class PodcastDao--><g id="elem_PodcastDao"><rect codeLine="88" fill="#F1F1F1" height="129.4844" id="PodcastDao" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="403" x="1389" y="611"/><ellipse cx="1544.25" cy="627" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1547.2188,632.6406 Q1546.6406,632.9375 1546,633.0781 Q1545.3594,633.2344 1544.6563,633.2344 Q1542.1563,633.2344 1540.8281,631.5938 Q1539.5156,629.9375 1539.5156,626.8125 Q1539.5156,623.6875 1540.8281,622.0313 Q1542.1563,620.375 1544.6563,620.375 Q1545.3594,620.375 1546,620.5313 Q1546.6563,620.6875 1547.2188,620.9844 L1547.2188,623.7031 Q1546.5938,623.125 1546,622.8594 Q1545.4063,622.5781 1544.7813,622.5781 Q1543.4375,622.5781 1542.75,623.6563 Q1542.0625,624.7188 1542.0625,626.8125 Q1542.0625,628.9063 1542.75,629.9844 Q1543.4375,631.0469 1544.7813,631.0469 Q1545.4063,631.0469 1546,630.7813 Q1546.5938,630.5 1547.2188,629.9219 L1547.2188,632.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="1564.75" y="631.8467">PodcastDao</text><line style="stroke:#181818;stroke-width:0.5;" x1="1390" x2="1791" y1="643" y2="643"/><line style="stroke:#181818;stroke-width:0.5;" x1="1390" x2="1791" y1="651" y2="651"/><ellipse cx="1400" cy="664.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="1409" y="667.9951">create(podcast: Podcast): String</text><ellipse cx="1400" cy="680.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="1409" y="684.292">findById(id: String): Podcast</text><ellipse cx="1400" cy="697.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="208" x="1409" y="700.5889">delete(podcastId: String): void</text><ellipse cx="1400" cy="713.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="300" x="1409" y="716.8857">findByExternalId(externalId: String): Podcast</text><ellipse cx="1400" cy="729.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="377" x="1409" y="733.1826">createIfNotExistAndReturn(podcast: Podcast): Podcast</text></g><!--MD5=[c59996553cd9fe02f456146ac05f8358]
+class UserAudioBook--><g id="elem_UserAudioBook"><rect codeLine="97" fill="#F1F1F1" height="194.6719" id="UserAudioBook" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="317" x="655" y="1507"/><ellipse cx="755.75" cy="1523" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M758.7188,1528.6406 Q758.1406,1528.9375 757.5,1529.0781 Q756.8594,1529.2344 756.1563,1529.2344 Q753.6563,1529.2344 752.3281,1527.5938 Q751.0156,1525.9375 751.0156,1522.8125 Q751.0156,1519.6875 752.3281,1518.0313 Q753.6563,1516.375 756.1563,1516.375 Q756.8594,1516.375 757.5,1516.5313 Q758.1563,1516.6875 758.7188,1516.9844 L758.7188,1519.7031 Q758.0938,1519.125 757.5,1518.8594 Q756.9063,1518.5781 756.2813,1518.5781 Q754.9375,1518.5781 754.25,1519.6563 Q753.5625,1520.7188 753.5625,1522.8125 Q753.5625,1524.9063 754.25,1525.9844 Q754.9375,1527.0469 756.2813,1527.0469 Q756.9063,1527.0469 757.5,1526.7813 Q758.0938,1526.5 758.7188,1525.9219 L758.7188,1528.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="776.25" y="1527.8467">UserAudioBook</text><line style="stroke:#181818;stroke-width:0.5;" x1="656" x2="971" y1="1539" y2="1539"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="663" y="1549.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="675" y="1555.9951">id: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="663" y="1565.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="675" y="1572.292">userId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="663" y="1582.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="675" y="1588.5889">audioBookId: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="656" x2="971" y1="1595.8906" y2="1595.8906"/><ellipse cx="666" cy="1609.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="675" y="1612.8857">getId(): String</text><ellipse cx="666" cy="1625.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="675" y="1629.1826">setId(id: String): void</text><ellipse cx="666" cy="1642.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="675" y="1645.4795">getUserId(): String</text><ellipse cx="666" cy="1658.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="675" y="1661.7764">setUserId(userId: String): void</text><ellipse cx="666" cy="1674.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="675" y="1678.0732">getAudioBookId(): String</text><ellipse cx="666" cy="1691.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="291" x="675" y="1694.3701">setAudioBookId(audioBookId: String): void</text></g><!--MD5=[855f1bbde21672b6343b0848e53c1883]
+class UserAudioBookDao--><g id="elem_UserAudioBookDao"><rect codeLine="112" fill="#F1F1F1" height="96.8906" id="UserAudioBookDao" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="392" x="1140.5" y="1333"/><ellipse cx="1264.75" cy="1349" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1267.7188,1354.6406 Q1267.1406,1354.9375 1266.5,1355.0781 Q1265.8594,1355.2344 1265.1563,1355.2344 Q1262.6563,1355.2344 1261.3281,1353.5938 Q1260.0156,1351.9375 1260.0156,1348.8125 Q1260.0156,1345.6875 1261.3281,1344.0313 Q1262.6563,1342.375 1265.1563,1342.375 Q1265.8594,1342.375 1266.5,1342.5313 Q1267.1563,1342.6875 1267.7188,1342.9844 L1267.7188,1345.7031 Q1267.0938,1345.125 1266.5,1344.8594 Q1265.9063,1344.5781 1265.2813,1344.5781 Q1263.9375,1344.5781 1263.25,1345.6563 Q1262.5625,1346.7188 1262.5625,1348.8125 Q1262.5625,1350.9063 1263.25,1351.9844 Q1263.9375,1353.0469 1265.2813,1353.0469 Q1265.9063,1353.0469 1266.5,1352.7813 Q1267.0938,1352.5 1267.7188,1351.9219 L1267.7188,1354.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1285.25" y="1353.8467">UserAudioBookDao</text><line style="stroke:#181818;stroke-width:0.5;" x1="1141.5" x2="1531.5" y1="1365" y2="1365"/><line style="stroke:#181818;stroke-width:0.5;" x1="1141.5" x2="1531.5" y1="1373" y2="1373"/><ellipse cx="1151.5" cy="1386.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="324" x="1160.5" y="1389.9951">create(userAudiobook: UserAudioBook): String</text><ellipse cx="1151.5" cy="1402.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="326" x="1160.5" y="1406.292">delete(userId: String, audioBookId: String): void</text><ellipse cx="1151.5" cy="1419.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="366" x="1160.5" y="1422.5889">findAudiobooksByUserId(userId: String): List&lt;String&gt;</text></g><!--MD5=[834376bcc7c69075533df40317be93ee]
+class UserPodcast--><g id="elem_UserPodcast"><rect codeLine="119" fill="#F1F1F1" height="194.6719" id="UserPodcast" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="280" x="1007.5" y="1507"/><ellipse cx="1099.25" cy="1523" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1102.2188,1528.6406 Q1101.6406,1528.9375 1101,1529.0781 Q1100.3594,1529.2344 1099.6563,1529.2344 Q1097.1563,1529.2344 1095.8281,1527.5938 Q1094.5156,1525.9375 1094.5156,1522.8125 Q1094.5156,1519.6875 1095.8281,1518.0313 Q1097.1563,1516.375 1099.6563,1516.375 Q1100.3594,1516.375 1101,1516.5313 Q1101.6563,1516.6875 1102.2188,1516.9844 L1102.2188,1519.7031 Q1101.5938,1519.125 1101,1518.8594 Q1100.4063,1518.5781 1099.7813,1518.5781 Q1098.4375,1518.5781 1097.75,1519.6563 Q1097.0625,1520.7188 1097.0625,1522.8125 Q1097.0625,1524.9063 1097.75,1525.9844 Q1098.4375,1527.0469 1099.7813,1527.0469 Q1100.4063,1527.0469 1101,1526.7813 Q1101.5938,1526.5 1102.2188,1525.9219 L1102.2188,1528.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1119.75" y="1527.8467">UserPodcast</text><line style="stroke:#181818;stroke-width:0.5;" x1="1008.5" x2="1286.5" y1="1539" y2="1539"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1015.5" y="1549.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="1027.5" y="1555.9951">id: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1015.5" y="1565.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1027.5" y="1572.292">userId: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1015.5" y="1582.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="1027.5" y="1588.5889">podcastId: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="1008.5" x2="1286.5" y1="1595.8906" y2="1595.8906"/><ellipse cx="1018.5" cy="1609.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1027.5" y="1612.8857">getId(): String</text><ellipse cx="1018.5" cy="1625.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="1027.5" y="1629.1826">setId(id: String): void</text><ellipse cx="1018.5" cy="1642.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="1027.5" y="1645.4795">getUserId(): String</text><ellipse cx="1018.5" cy="1658.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="1027.5" y="1661.7764">setUserId(userId: String): void</text><ellipse cx="1018.5" cy="1674.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="1027.5" y="1678.0732">getPodcastId(): String</text><ellipse cx="1018.5" cy="1691.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="1027.5" y="1694.3701">setPodcastId(podcastId: String): void</text></g><!--MD5=[a9bf632faa073cf406e0bb117fc893dd]
+class UserPodcastDao--><g id="elem_UserPodcastDao"><rect codeLine="135" fill="#F1F1F1" height="96.8906" id="UserPodcastDao" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="374" x="1567.5" y="1333"/><ellipse cx="1692.25" cy="1349" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1695.2188,1354.6406 Q1694.6406,1354.9375 1694,1355.0781 Q1693.3594,1355.2344 1692.6563,1355.2344 Q1690.1563,1355.2344 1688.8281,1353.5938 Q1687.5156,1351.9375 1687.5156,1348.8125 Q1687.5156,1345.6875 1688.8281,1344.0313 Q1690.1563,1342.375 1692.6563,1342.375 Q1693.3594,1342.375 1694,1342.5313 Q1694.6563,1342.6875 1695.2188,1342.9844 L1695.2188,1345.7031 Q1694.5938,1345.125 1694,1344.8594 Q1693.4063,1344.5781 1692.7813,1344.5781 Q1691.4375,1344.5781 1690.75,1345.6563 Q1690.0625,1346.7188 1690.0625,1348.8125 Q1690.0625,1350.9063 1690.75,1351.9844 Q1691.4375,1353.0469 1692.7813,1353.0469 Q1693.4063,1353.0469 1694,1352.7813 Q1694.5938,1352.5 1695.2188,1351.9219 L1695.2188,1354.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1712.75" y="1353.8467">UserPodcastDao</text><line style="stroke:#181818;stroke-width:0.5;" x1="1568.5" x2="1940.5" y1="1365" y2="1365"/><line style="stroke:#181818;stroke-width:0.5;" x1="1568.5" x2="1940.5" y1="1373" y2="1373"/><ellipse cx="1578.5" cy="1386.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="287" x="1587.5" y="1389.9951">create(userPodcast: UserPodcast): String</text><ellipse cx="1578.5" cy="1402.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="348" x="1587.5" y="1406.292">findPodcastsByUserId(userId: String): List&lt;String&gt;</text><ellipse cx="1578.5" cy="1419.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="1587.5" y="1422.5889">delete(userId: String, podcastId: String): void</text></g><!--MD5=[927f9f861fde66b6d100731ffcaabd56]
+class OnlineResourceFactory--><g id="elem_OnlineResourceFactory"><rect codeLine="142" fill="#F1F1F1" height="80.5938" id="OnlineResourceFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="409" x="945" y="420"/><ellipse cx="1064.75" cy="436" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1060.6719,431.7656 L1060.6719,429.6094 L1068.0625,429.6094 L1068.0625,431.7656 L1065.5938,431.7656 L1065.5938,439.8438 L1068.0625,439.8438 L1068.0625,442 L1060.6719,442 L1060.6719,439.8438 L1063.1406,439.8438 L1063.1406,431.7656 L1060.6719,431.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="161" x="1085.25" y="440.8467">OnlineResourceFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="946" x2="1353" y1="452" y2="452"/><line style="stroke:#181818;stroke-width:0.5;" x1="946" x2="1353" y1="460" y2="460"/><ellipse cx="956" cy="473.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="383" x="965" y="476.9951">createAudioBooks(itemObject: JSONObject): AudioBook</text><ellipse cx="956" cy="489.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="345" x="965" y="493.292">createPodcasts(itemObject: JSONObject): Podcast</text></g><!--MD5=[5cf305aef0bb73a447c704e60fcb645b]
+class SpotifyResourceFactory--><g id="elem_SpotifyResourceFactory"><rect codeLine="147" fill="#F1F1F1" height="80.5938" id="SpotifyResourceFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="409" x="501" y="635"/><ellipse cx="619.75" cy="651" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M622.7188,656.6406 Q622.1406,656.9375 621.5,657.0781 Q620.8594,657.2344 620.1563,657.2344 Q617.6563,657.2344 616.3281,655.5938 Q615.0156,653.9375 615.0156,650.8125 Q615.0156,647.6875 616.3281,646.0313 Q617.6563,644.375 620.1563,644.375 Q620.8594,644.375 621.5,644.5313 Q622.1563,644.6875 622.7188,644.9844 L622.7188,647.7031 Q622.0938,647.125 621.5,646.8594 Q620.9063,646.5781 620.2813,646.5781 Q618.9375,646.5781 618.25,647.6563 Q617.5625,648.7188 617.5625,650.8125 Q617.5625,652.9063 618.25,653.9844 Q618.9375,655.0469 620.2813,655.0469 Q620.9063,655.0469 621.5,654.7813 Q622.0938,654.5 622.7188,653.9219 L622.7188,656.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="640.25" y="655.8467">SpotifyResourceFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="502" x2="909" y1="667" y2="667"/><line style="stroke:#181818;stroke-width:0.5;" x1="502" x2="909" y1="675" y2="675"/><ellipse cx="512" cy="688.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="383" x="521" y="691.9951">createAudioBooks(itemObject: JSONObject): AudioBook</text><ellipse cx="512" cy="704.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="345" x="521" y="708.292">createPodcasts(itemObject: JSONObject): Podcast</text></g><!--MD5=[6e1a6f5548a3e6653ac2d2f8f2429928]
+class iTunesResourceFactory--><g id="elem_iTunesResourceFactory"><rect codeLine="154" fill="#F1F1F1" height="80.5938" id="iTunesResourceFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="409" x="945" y="635"/><ellipse cx="1063.25" cy="651" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1066.2188,656.6406 Q1065.6406,656.9375 1065,657.0781 Q1064.3594,657.2344 1063.6563,657.2344 Q1061.1563,657.2344 1059.8281,655.5938 Q1058.5156,653.9375 1058.5156,650.8125 Q1058.5156,647.6875 1059.8281,646.0313 Q1061.1563,644.375 1063.6563,644.375 Q1064.3594,644.375 1065,644.5313 Q1065.6563,644.6875 1066.2188,644.9844 L1066.2188,647.7031 Q1065.5938,647.125 1065,646.8594 Q1064.4063,646.5781 1063.7813,646.5781 Q1062.4375,646.5781 1061.75,647.6563 Q1061.0625,648.7188 1061.0625,650.8125 Q1061.0625,652.9063 1061.75,653.9844 Q1062.4375,655.0469 1063.7813,655.0469 Q1064.4063,655.0469 1065,654.7813 Q1065.5938,654.5 1066.2188,653.9219 L1066.2188,656.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="1083.75" y="655.8467">iTunesResourceFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="946" x2="1353" y1="667" y2="667"/><line style="stroke:#181818;stroke-width:0.5;" x1="946" x2="1353" y1="675" y2="675"/><ellipse cx="956" cy="688.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="383" x="965" y="691.9951">createAudioBooks(itemObject: JSONObject): AudioBook</text><ellipse cx="956" cy="704.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="345" x="965" y="708.292">createPodcasts(itemObject: JSONObject): Podcast</text></g><!--MD5=[4ebba41136f4ea4aa27bc7c1f6286be7]
+class OnlineSearchStrategy--><g id="elem_OnlineSearchStrategy"><rect codeLine="161" fill="#F1F1F1" height="64.2969" id="OnlineSearchStrategy" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="394" x="1827.5" y="428.5"/><ellipse cx="1945.25" cy="444.5" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1941.1719,440.2656 L1941.1719,438.1094 L1948.5625,438.1094 L1948.5625,440.2656 L1946.0938,440.2656 L1946.0938,448.3438 L1948.5625,448.3438 L1948.5625,450.5 L1941.1719,450.5 L1941.1719,448.3438 L1943.6406,448.3438 L1943.6406,440.2656 L1941.1719,440.2656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="150" x="1965.75" y="449.3467">OnlineSearchStrategy</text><line style="stroke:#181818;stroke-width:0.5;" x1="1828.5" x2="2220.5" y1="460.5" y2="460.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="1828.5" x2="2220.5" y1="468.5" y2="468.5"/><ellipse cx="1838.5" cy="482.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="368" x="1847.5" y="485.4951">fetchResults(criteria :OnlineSearchCriteria) :JSONArray</text></g><!--MD5=[cd0d0e1cc07ee354ae0df6a0c98b6d4b]
+class SpotifySearchStrategy--><g id="elem_SpotifySearchStrategy"><rect codeLine="165" fill="#F1F1F1" height="227.2656" id="SpotifySearchStrategy" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="394" x="1827.5" y="562"/><ellipse cx="1944.75" cy="578" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1947.7188,583.6406 Q1947.1406,583.9375 1946.5,584.0781 Q1945.8594,584.2344 1945.1563,584.2344 Q1942.6563,584.2344 1941.3281,582.5938 Q1940.0156,580.9375 1940.0156,577.8125 Q1940.0156,574.6875 1941.3281,573.0313 Q1942.6563,571.375 1945.1563,571.375 Q1945.8594,571.375 1946.5,571.5313 Q1947.1563,571.6875 1947.7188,571.9844 L1947.7188,574.7031 Q1947.0938,574.125 1946.5,573.8594 Q1945.9063,573.5781 1945.2813,573.5781 Q1943.9375,573.5781 1943.25,574.6563 Q1942.5625,575.7188 1942.5625,577.8125 Q1942.5625,579.9063 1943.25,580.9844 Q1943.9375,582.0469 1945.2813,582.0469 Q1945.9063,582.0469 1946.5,581.7813 Q1947.0938,581.5 1947.7188,580.9219 L1947.7188,583.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="1965.25" y="582.8467">SpotifySearchStrategy</text><line style="stroke:#181818;stroke-width:0.5;" x1="1828.5" x2="2220.5" y1="594" y2="594"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="604.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="1847.5" y="610.9951">accessToken: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="620.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="1847.5" y="627.292">limit: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="637.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1847.5" y="643.5889">offset: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="653.5391"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="1847.5" y="659.8857">market: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="669.8359"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="1847.5" y="676.1826">TOKEN_URL: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="686.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="1847.5" y="692.4795">CLIENT_ID: String</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1835.5" y="702.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="1847.5" y="708.7764">CLIENT_SECRET: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="1828.5" x2="2220.5" y1="716.0781" y2="716.0781"/><ellipse cx="1838.5" cy="729.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="1847.5" y="733.0732">encodeQuery(query: String): String</text><ellipse cx="1838.5" cy="746.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="368" x="1847.5" y="749.3701">fetchResults(criteria: OnlineSearchCriteria): JSONArray</text><ellipse cx="1838.5" cy="762.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267" x="1847.5" y="765.667">performHttpRequest(url: String): String</text><ellipse cx="1838.5" cy="778.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="1847.5" y="781.9639">obtainAccessToken(): void</text></g><!--MD5=[a6a1ecd5d53d20d40f88334f1c72b734]
+class iTunesSearchStrategy--><g id="elem_iTunesSearchStrategy"><rect codeLine="180" fill="#F1F1F1" height="96.8906" id="iTunesSearchStrategy" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="394" x="2256.5" y="627"/><ellipse cx="2373.25" cy="643" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2376.2188,648.6406 Q2375.6406,648.9375 2375,649.0781 Q2374.3594,649.2344 2373.6563,649.2344 Q2371.1563,649.2344 2369.8281,647.5938 Q2368.5156,645.9375 2368.5156,642.8125 Q2368.5156,639.6875 2369.8281,638.0313 Q2371.1563,636.375 2373.6563,636.375 Q2374.3594,636.375 2375,636.5313 Q2375.6563,636.6875 2376.2188,636.9844 L2376.2188,639.7031 Q2375.5938,639.125 2375,638.8594 Q2374.4063,638.5781 2373.7813,638.5781 Q2372.4375,638.5781 2371.75,639.6563 Q2371.0625,640.7188 2371.0625,642.8125 Q2371.0625,644.9063 2371.75,645.9844 Q2372.4375,647.0469 2373.7813,647.0469 Q2374.4063,647.0469 2375,646.7813 Q2375.5938,646.5 2376.2188,645.9219 L2376.2188,648.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="2393.75" y="647.8467">iTunesSearchStrategy</text><line style="stroke:#181818;stroke-width:0.5;" x1="2257.5" x2="2649.5" y1="659" y2="659"/><line style="stroke:#181818;stroke-width:0.5;" x1="2257.5" x2="2649.5" y1="667" y2="667"/><ellipse cx="2267.5" cy="680.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="2276.5" y="683.9951">encodeQuery(query: String): String</text><ellipse cx="2267.5" cy="696.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="368" x="2276.5" y="700.292">fetchResults(criteria: OnlineSearchCriteria): JSONArray</text><ellipse cx="2267.5" cy="713.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="267" x="2276.5" y="716.5889">performHttpRequest(url: String): String</text></g><!--MD5=[c887fed489b428c5382c9d2552f7bcb3]
+class OnlineSearchContext--><g id="elem_OnlineSearchContext"><rect codeLine="187" fill="#F1F1F1" height="96.8906" id="OnlineSearchContext" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="462" x="1694.5" y="197"/><ellipse cx="1848.25" cy="213" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1851.2188,218.6406 Q1850.6406,218.9375 1850,219.0781 Q1849.3594,219.2344 1848.6563,219.2344 Q1846.1563,219.2344 1844.8281,217.5938 Q1843.5156,215.9375 1843.5156,212.8125 Q1843.5156,209.6875 1844.8281,208.0313 Q1846.1563,206.375 1848.6563,206.375 Q1849.3594,206.375 1850,206.5313 Q1850.6563,206.6875 1851.2188,206.9844 L1851.2188,209.7031 Q1850.5938,209.125 1850,208.8594 Q1849.4063,208.5781 1848.7813,208.5781 Q1847.4375,208.5781 1846.75,209.6563 Q1846.0625,210.7188 1846.0625,212.8125 Q1846.0625,214.9063 1846.75,215.9844 Q1847.4375,217.0469 1848.7813,217.0469 Q1849.4063,217.0469 1850,216.7813 Q1850.5938,216.5 1851.2188,215.9219 L1851.2188,218.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="1868.75" y="217.8467">OnlineSearchContext</text><line style="stroke:#181818;stroke-width:0.5;" x1="1695.5" x2="2155.5" y1="229" y2="229"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1702.5" y="239.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="1714.5" y="245.9951">searchStrategy: OnlineSearchStrategy</text><line style="stroke:#181818;stroke-width:0.5;" x1="1695.5" x2="2155.5" y1="253.2969" y2="253.2969"/><ellipse cx="1705.5" cy="266.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="436" x="1714.5" y="270.292">setSearchStrategy(searchStrategy: OnlineSearchStrategy): void</text><ellipse cx="1705.5" cy="283.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="355" x="1714.5" y="286.5889">fetchResults(criteria: OnlineSearchCriteria): List&lt;?&gt;</text></g><!--MD5=[9246f12629cb1ef6c830e4a4780e8886]
+class FavouritesResource--><g id="elem_FavouritesResource"><rect codeLine="196" fill="#F1F1F1" height="145.7813" id="FavouritesResource" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="402" x="1437.5" y="988"/><ellipse cx="1565.25" cy="1004" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1568.2188,1009.6406 Q1567.6406,1009.9375 1567,1010.0781 Q1566.3594,1010.2344 1565.6563,1010.2344 Q1563.1563,1010.2344 1561.8281,1008.5938 Q1560.5156,1006.9375 1560.5156,1003.8125 Q1560.5156,1000.6875 1561.8281,999.0313 Q1563.1563,997.375 1565.6563,997.375 Q1566.3594,997.375 1567,997.5313 Q1567.6563,997.6875 1568.2188,997.9844 L1568.2188,1000.7031 Q1567.5938,1000.125 1567,999.8594 Q1566.4063,999.5781 1565.7813,999.5781 Q1564.4375,999.5781 1563.75,1000.6563 Q1563.0625,1001.7188 1563.0625,1003.8125 Q1563.0625,1005.9063 1563.75,1006.9844 Q1564.4375,1008.0469 1565.7813,1008.0469 Q1566.4063,1008.0469 1567,1007.7813 Q1567.5938,1007.5 1568.2188,1006.9219 L1568.2188,1009.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="1585.75" y="1008.8467">FavouritesResource</text><line style="stroke:#181818;stroke-width:0.5;" x1="1438.5" x2="1838.5" y1="1020" y2="1020"/><line style="stroke:#181818;stroke-width:0.5;" x1="1438.5" x2="1838.5" y1="1028" y2="1028"/><ellipse cx="1448.5" cy="1041.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="358" x="1457.5" y="1044.9951">favouriteAudiobook(audioBookId: String): Response</text><ellipse cx="1448.5" cy="1057.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="376" x="1457.5" y="1061.292">unfavouriteAudiobook(audioBookId: String): Response</text><ellipse cx="1448.5" cy="1074.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="258" x="1457.5" y="1077.5889">getFavouriteAudiobooks(): Response</text><ellipse cx="1448.5" cy="1090.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="322" x="1457.5" y="1093.8857">favouritePodcast(podcastId: String): Response</text><ellipse cx="1448.5" cy="1106.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="340" x="1457.5" y="1110.1826">unfavouritePodcast(podcastId: String): Response</text><ellipse cx="1448.5" cy="1123.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="1457.5" y="1126.4795">getFavouritePodcasts(): Response</text></g><!--MD5=[c1847de342bc47c7c005eb3b7b641b77]
+class OnlineIntegrationResource--><g id="elem_OnlineIntegrationResource"><rect codeLine="207" fill="#F1F1F1" height="64.2969" id="OnlineIntegrationResource" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="520" x="1914.5" y="7"/><ellipse cx="2077.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M2080.7188,28.6406 Q2080.1406,28.9375 2079.5,29.0781 Q2078.8594,29.2344 2078.1563,29.2344 Q2075.6563,29.2344 2074.3281,27.5938 Q2073.0156,25.9375 2073.0156,22.8125 Q2073.0156,19.6875 2074.3281,18.0313 Q2075.6563,16.375 2078.1563,16.375 Q2078.8594,16.375 2079.5,16.5313 Q2080.1563,16.6875 2080.7188,16.9844 L2080.7188,19.7031 Q2080.0938,19.125 2079.5,18.8594 Q2078.9063,18.5781 2078.2813,18.5781 Q2076.9375,18.5781 2076.25,19.6563 Q2075.5625,20.7188 2075.5625,22.8125 Q2075.5625,24.9063 2076.25,25.9844 Q2076.9375,27.0469 2078.2813,27.0469 Q2078.9063,27.0469 2079.5,26.7813 Q2080.0938,26.5 2080.7188,25.9219 L2080.7188,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="2098.25" y="27.8467">OnlineIntegrationResource</text><line style="stroke:#181818;stroke-width:0.5;" x1="1915.5" x2="2433.5" y1="39" y2="39"/><line style="stroke:#181818;stroke-width:0.5;" x1="1915.5" x2="2433.5" y1="47" y2="47"/><ellipse cx="1925.5" cy="60.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="494" x="1934.5" y="63.9951">connect(service: String, search: String, contentType: String): Response</text></g><!--MD5=[0d14a23448c2fcee2189345b2a733921]
+link OnlineSearchCriteria to OnlineSearchContentProvider--><g id="link_OnlineSearchCriteria_OnlineSearchContentProvider"><path codeLine="27" d="M2532.26,343.03 C2561.23,368.73 2591.07,395.22 2614.96,416.42 " fill="none" id="OnlineSearchCriteria-to-OnlineSearchContentProvider" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2618.74,419.78,2614.6729,410.8101,2615.0037,416.4573,2609.3566,416.7881,2618.74,419.78" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="2580.5" y="386.0669">uses</text></g><!--MD5=[02ca99c0390c360344401a0ee95f5252]
+link OnlineSearchCriteria to OnlineSearchContentType--><g id="link_OnlineSearchCriteria_OnlineSearchContentType"><path codeLine="28" d="M2414.44,343.03 C2412.09,367.99 2409.68,393.69 2407.72,414.58 " fill="none" id="OnlineSearchCriteria-to-OnlineSearchContentType" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2407.23,419.78,2412.0595,411.1965,2407.7007,414.8022,2404.095,410.4434,2407.23,419.78" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="2412.5" y="386.0669">uses</text></g><!--MD5=[3a9bf15e9630b21ad6af6b1685d8e8bd]
+link AudioBook to User--><g id="link_AudioBook_User"><path codeLine="54" d="M844.15,1256.45 C859.35,1297.12 873.34,1334.56 881.88,1357.44 " fill="none" id="AudioBook-User" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="823.5387" y="1276.4426">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="853.7243" y="1346.4367">0..*</text></g><!--MD5=[56bc9f7725cedf003bc77b09d64484e0]
+link AudioBookDao to AudioBook--><g id="link_AudioBookDao_AudioBook"><path codeLine="63" d="M325.14,740.04 C401.66,794.89 514.21,875.57 607.15,942.19 " fill="none" id="AudioBookDao-to-AudioBook" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="611.28,945.15,606.2701,936.6706,607.2075,942.2492,601.6288,943.1866,611.28,945.15" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="457.5" y="832.0669">uses</text></g><!--MD5=[11598b6a9ea9cf6b9a51619da429391a]
+link Podcast to User--><g id="link_Podcast_User"><path codeLine="86" d="M1000.9,1231.51 C963.91,1281.42 927.93,1329.99 907.56,1357.48 " fill="none" id="Podcast-User" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="971.6877" y="1251.6382">0..*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="885.9848" y="1346.4869">0..*</text></g><!--MD5=[fb0adb4623085eecc9f91b9061754df3]
+link PodcastDao to Podcast--><g id="link_PodcastDao_Podcast"><path codeLine="95" d="M1513.62,740.04 C1453.15,790.02 1366.73,861.45 1290.87,924.14 " fill="none" id="PodcastDao-to-Podcast" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1286.81,927.5,1296.2916,924.8355,1290.6593,924.3089,1291.1859,918.6767,1286.81,927.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1415.5" y="832.0669">uses</text></g><!--MD5=[9e000b3f920f9202eb813e62b0fcaac0]
+reverse link User to UserAudioBook--><g id="link_User_UserAudioBook"><path codeLine="109" d="M878.08,1418.14 C869.68,1442.26 858.15,1475.36 847.15,1506.92 " fill="none" id="User-backto-UserAudioBook" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="882.41,1405.73,876.6554,1410.0756,878.4534,1417.059,884.208,1412.7133,882.41,1405.73" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="871.4631" y="1425.5473">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="825.8459" y="1495.9594">0..*</text></g><!--MD5=[a5ab72d2937c61d8e39fb523d2937c92]
+reverse link AudioBook to UserAudioBook--><g id="link_AudioBook_UserAudioBook"><path codeLine="110" d="M787.59,1269.39 C793.92,1351.12 800.9,1441.01 806.01,1506.95 " fill="none" id="AudioBook-backto-UserAudioBook" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="786.57,1256.35,783.043,1262.6397,787.4924,1268.3145,791.0194,1262.0248,786.57,1256.35" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="779.0024" y="1276.3387">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="781.5561" y="1495.9916">0..*</text></g><!--MD5=[51c2a05708836872e92b96504861d8b6]
+link UserAudioBookDao to UserAudioBook--><g id="link_UserAudioBookDao_UserAudioBook"><path codeLine="117" d="M1179.4,1430.01 C1150.95,1439.41 1121.69,1449.6 1094.5,1460 C1046.75,1478.27 1035.29,1484.25 989.5,1507 C985.37,1509.05 981.21,1511.15 977.01,1513.28 " fill="none" id="UserAudioBookDao-to-UserAudioBook" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="972.45,1515.6,982.285,1515.0774,976.9049,1513.3297,978.6526,1507.9496,972.45,1515.6" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1095.5" y="1473.0669">uses</text></g><!--MD5=[1f551e8af5e4e2e6f620c8b761a01583]
+reverse link User to UserPodcast--><g id="link_User_UserPodcast"><path codeLine="132" d="M903.75,1417.8 C912.17,1436.9 924.52,1460 940.5,1477 C940.61,1477.12 970.35,1495.31 1007.26,1517.86 " fill="none" id="User-backto-UserPodcast" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="898.66,1405.63,897.2826,1412.7083,903.2866,1416.7022,904.6641,1409.6239,898.66,1405.63" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="891.674" y="1425.4229">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="976.4359" y="1510.0847">0..*</text></g><!--MD5=[ee38c6f7cd2015021e51df1b1310b770]
+reverse link Podcast to UserPodcast--><g id="link_Podcast_UserPodcast"><path codeLine="133" d="M1118.57,1244.94 C1117.6,1304.06 1118.19,1369.86 1122.5,1430 C1124.29,1455.04 1127.53,1481.96 1131.09,1506.95 " fill="none" id="Podcast-backto-UserPodcast" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1118.82,1231.64,1114.7086,1237.5642,1118.5959,1243.6379,1122.7072,1237.7137,1118.82,1231.64" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1110.2908" y="1251.7741">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1105.9531" y="1495.9916">0..*</text></g><!--MD5=[210865008b8669a4a3b1a008d81eee9e]
+link UserPodcastDao to UserPodcast--><g id="link_UserPodcastDao_UserPodcast"><path codeLine="140" d="M1623.91,1430.05 C1526.42,1465.54 1393.2,1514.05 1292.42,1550.74 " fill="none" id="UserPodcastDao-to-UserPodcast" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1287.64,1552.48,1297.4658,1553.1539,1292.3373,1550.7667,1294.7245,1545.6382,1287.64,1552.48" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1542.5" y="1473.0669">uses</text></g><!--MD5=[b6e43061f757c810e73d5ba5a8ee5300]
+reverse link OnlineResourceFactory to SpotifyResourceFactory--><g id="link_OnlineResourceFactory_SpotifyResourceFactory"><path d="M1041.16,509.4 C1004.87,525.75 964.29,544.36 927.5,562 C878.6,585.44 824.3,612.94 781.63,634.88 " fill="none" id="OnlineResourceFactory-backto-SpotifyResourceFactory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1038.59,502.88,1059.7,501.08,1044.32,515.65,1038.59,502.88" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a190ef11d7b7dfdf8a81ca151087ebde]
+link SpotifyResourceFactory to AudioBook--><g id="link_SpotifyResourceFactory_AudioBook"><path codeLine="151" d="M712.31,716.1 C718.37,751.3 727.72,805.6 737.21,860.73 " fill="none" id="SpotifyResourceFactory-to-AudioBook" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="738.06,865.72,740.4857,856.1745,737.2172,860.7915,732.6001,857.5231,738.06,865.72" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="734.5" y="832.0669">uses</text></g><!--MD5=[52a1c8d6fad572325f708e9d3478600b]
+link SpotifyResourceFactory to Podcast--><g id="link_SpotifyResourceFactory_Podcast"><path codeLine="152" d="M784.25,716.02 C831.24,741.72 890.51,778.01 936.5,819 C959.25,839.27 981.31,862.52 1001.87,886.39 " fill="none" id="SpotifyResourceFactory-to-Podcast" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1005.15,890.23,1002.3299,880.7935,1001.896,886.4337,996.2559,885.9999,1005.15,890.23" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="956.5" y="832.0669">uses</text></g><!--MD5=[a995c036cbcb7982e128939a30ff3a1e]
+reverse link OnlineResourceFactory to iTunesResourceFactory--><g id="link_OnlineResourceFactory_iTunesResourceFactory"><path d="M1149.5,521.22 C1149.5,557.52 1149.5,602.86 1149.5,634.79 " fill="none" id="OnlineResourceFactory-backto-iTunesResourceFactory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1142.5,521.06,1149.5,501.06,1156.5,521.06,1142.5,521.06" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[dc98f37b350d9067e75766de1c466d9e]
+link iTunesResourceFactory to AudioBook--><g id="link_iTunesResourceFactory_AudioBook"><path codeLine="158" d="M1052.89,716.06 C1002.83,740.18 943.38,774.89 900.5,819 C887.88,831.99 876.15,846.46 865.33,861.68 " fill="none" id="iTunesResourceFactory-to-AudioBook" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="862.31,865.99,870.7576,860.9266,865.185,861.8992,864.2124,856.3266,862.31,865.99" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="901.5" y="832.0669">uses</text></g><!--MD5=[01fee75328ab8d6eba2a9c470f7dab53]
+link iTunesResourceFactory to Podcast--><g id="link_iTunesResourceFactory_Podcast"><path codeLine="159" d="M1147.13,716.1 C1144.7,756.49 1140.77,822.02 1136.99,885.1 " fill="none" id="iTunesResourceFactory-to-Podcast" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1136.67,890.42,1141.2018,881.6757,1136.9695,885.429,1133.2162,881.1966,1136.67,890.42" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1142.5" y="832.0669">uses</text></g><!--MD5=[3fc86159eae81fdcc2c56dfe053401a0]
+reverse link OnlineSearchStrategy to SpotifySearchStrategy--><g id="link_OnlineSearchStrategy_SpotifySearchStrategy"><path d="M2024.5,513.08 C2024.5,527.93 2024.5,544.74 2024.5,561.77 " fill="none" id="OnlineSearchStrategy-backto-SpotifySearchStrategy" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2017.5,512.93,2024.5,492.93,2031.5,512.93,2017.5,512.93" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[39919647f89ea5d8179a5dff8d2faa2e]
+reverse link OnlineSearchStrategy to iTunesSearchStrategy--><g id="link_OnlineSearchStrategy_iTunesSearchStrategy"><path d="M2111.06,501.12 C2150.17,519.29 2196.85,541.34 2238.5,562 C2280.29,582.74 2326.17,606.59 2364.76,626.97 " fill="none" id="OnlineSearchStrategy-backto-iTunesSearchStrategy" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="2108.01,507.42,2092.81,492.67,2113.9,494.72,2108.01,507.42" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f5c4dc5c5f84170bdb51b4873515bce0]
+link OnlineSearchContext to OnlineSearchStrategy--><g id="link_OnlineSearchContext_OnlineSearchStrategy"><path codeLine="193" d="M1947.59,294.04 C1965.81,333.23 1991.26,387.98 2007.81,423.58 " fill="none" id="OnlineSearchContext-to-OnlineSearchStrategy" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2009.98,428.26,2009.8344,418.4122,2007.882,423.7215,2002.5728,421.769,2009.98,428.26" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1991.5" y="386.0669">uses</text></g><!--MD5=[ba18ecd0bcd1766818fa21b6ae8f6954]
+link OnlineSearchContext to OnlineResourceFactory--><g id="link_OnlineSearchContext_OnlineResourceFactory"><path codeLine="194" d="M1752.32,294.04 C1616.04,331.44 1428.14,383.02 1298.52,418.6 " fill="none" id="OnlineSearchContext-to-OnlineResourceFactory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1293.55,419.96,1303.2898,421.4217,1298.3698,418.6299,1301.1616,413.7099,1293.55,419.96" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1446.5" y="386.0669">uses</text></g><!--MD5=[18155a1f96d10fc71ced751f8eff6a67]
+link FavouritesResource to UserPodcastDao--><g id="link_FavouritesResource_UserPodcastDao"><path codeLine="204" d="M1664.82,1134.27 C1686.3,1193.24 1716.14,1275.17 1735.38,1328.01 " fill="none" id="FavouritesResource-to-UserPodcastDao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1737.1,1332.72,1737.7739,1322.8942,1735.3867,1328.0227,1730.2582,1325.6355,1737.1,1332.72" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1724.5" y="1299.0669">uses</text></g><!--MD5=[fede4a2bddfbc073f691a07343f818dd]
+link FavouritesResource to UserAudioBookDao--><g id="link_FavouritesResource_UserAudioBookDao"><path codeLine="205" d="M1569.97,1134.27 C1513.72,1193.6 1435.44,1276.16 1385.36,1328.97 " fill="none" id="FavouritesResource-to-UserAudioBookDao" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1381.81,1332.72,1390.8985,1328.9255,1385.244,1329.0857,1385.0837,1323.4311,1381.81,1332.72" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="1427.5" y="1299.0669">uses</text></g><!--MD5=[c902bd2e2f3d4f8a9c5b7e73359b8208]
+link OnlineIntegrationResource to OnlineSearchContext--><g id="link_OnlineIntegrationResource_OnlineSearchContext"><path codeLine="210" d="M2136.68,71.06 C2097.12,103.55 2034.36,155.09 1987.53,193.56 " fill="none" id="OnlineIntegrationResource-to-OnlineSearchContext" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="1983.62,196.77,1993.117,194.161,1987.4879,193.6015,1988.0474,187.9724,1983.62,196.77" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="2095.5" y="114.0669">uses</text></g><!--MD5=[80a8bb59b5d034f36f5254665ca5b0ce]
+link OnlineIntegrationResource to OnlineSearchCriteria--><g id="link_OnlineIntegrationResource_OnlineSearchCriteria"><path codeLine="211" d="M2212.32,71.06 C2236.5,90.92 2269.35,117.9 2301.94,144.66 " fill="none" id="OnlineIntegrationResource-to-OnlineSearchCriteria" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="2305.91,147.92,2301.4986,139.1143,2302.0479,144.7445,2296.4177,145.2938,2305.91,147.92" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="2270.5" y="114.0669">uses</text></g><!--MD5=[a99397235778e9f4dc22ef819aa6db79]
+@startuml 
+class User {
+
+}
+
+enum OnlineSearchContentType {
+    AUDIO_BOOKS
+    PODCASTS
+}
+
+enum OnlineSearchContentProvider {
+    I_TUNES,
+    SPOTIFY,
+}
+
+class OnlineSearchCriteria {
+    - contentType: OnlineSearchContentType
+    - query: String
+    - provider: OnlineSearchContentProvider
+
+    + getContentType(): OnlineSearchContentType
+    + setContentType(contentType: OnlineSearchContentType): void
+    + getQuery(): String
+    + setQuery(query: String): void
+    + getProvider(): OnlineSearchContentProvider
+    + setProvider(provider: OnlineSearchContentProvider): void
+}
+OnlineSearchCriteria ..> OnlineSearchContentProvider :uses
+OnlineSearchCriteria ..> OnlineSearchContentType :uses
+
+class AudioBook {
+    - id: String
+    - externalId: String
+    - name: String
+    - authors: String
+    - thumbnailUrl: String
+    - description: String
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getAuthors(): String
+    + setAuthors(authors: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDescription(): String
+    + setDescription(description: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getUrl(): String
+    + setUrl(url: String): void
+}
+AudioBook "0..*" - - "0..*" User
+
+class AudioBookDao {
+    + create(audioBook: AudioBook): String
+    + delete(audioBookId: String): void
+    + findById(id: String): AudioBook
+    + findByExternalId(externalId: String): AudioBook
+    + createIfNotExistAndReturn(audioBook: AudioBook): AudioBook
+}
+AudioBookDao ..> AudioBook :uses
+
+class Podcast {
+    - id: String
+    - externalId: String
+    - name: String
+    - thumbnailUrl: String
+    - duration: float
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDuration(): float
+    + setDuration(duration: float): void
+    + getUrl(): String
+    + setUrl(url: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+}
+Podcast "0..*" - - "0..*" User
+
+class PodcastDao {
+    + create(podcast: Podcast): String
+    + findById(id: String): Podcast
+    + delete(podcastId: String): void
+    + findByExternalId(externalId: String): Podcast
+    + createIfNotExistAndReturn(podcast: Podcast): Podcast
+}
+PodcastDao ..> Podcast :uses
+
+class UserAudioBook {
+    - id: String
+    - userId: String
+    - audioBookId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAudioBookId(): String
+    + setAudioBookId(audioBookId: String): void
+}
+User "1" *- - "0..*" UserAudioBook
+AudioBook "1" *- - "0..*" UserAudioBook
+
+class UserAudioBookDao {
+    + create(userAudiobook: UserAudioBook): String
+    + delete(userId: String, audioBookId: String): void
+    + findAudiobooksByUserId(userId: String): List<String>
+}
+UserAudioBookDao ..> UserAudioBook :uses
+
+class UserPodcast {
+    - id: String
+    - userId: String
+    - podcastId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getPodcastId(): String
+    + setPodcastId(podcastId: String): void
+}
+
+User "1" *- - "0..*" UserPodcast
+Podcast "1" *- - "0..*" UserPodcast
+
+class UserPodcastDao {
+    + create(userPodcast: UserPodcast): String
+    + findPodcastsByUserId(userId: String): List<String>
+    + delete(userId: String, podcastId: String): void
+}
+UserPodcastDao ..> UserPodcast :uses
+
+interface OnlineResourceFactory {
+    + createAudioBooks(itemObject: JSONObject): AudioBook
+    + createPodcasts(itemObject: JSONObject): Podcast
+}
+
+class SpotifyResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+SpotifyResourceFactory ..> AudioBook :uses
+SpotifyResourceFactory ..> Podcast :uses
+
+class iTunesResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+iTunesResourceFactory ..> AudioBook :uses
+iTunesResourceFactory ..> Podcast :uses
+
+interface OnlineSearchStrategy {
+  + fetchResults(criteria :OnlineSearchCriteria) :JSONArray
+}
+
+class SpotifySearchStrategy implements OnlineSearchStrategy {
+    - accessToken: String
+    - limit: int
+    - offset: int
+    - market: String
+    - TOKEN_URL: String
+    - CLIENT_ID: String
+    - CLIENT_SECRET: String
+
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+    + obtainAccessToken(): void
+}
+
+class iTunesSearchStrategy implements OnlineSearchStrategy {
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+}
+
+
+class OnlineSearchContext {
+    - searchStrategy: OnlineSearchStrategy
+
+    + setSearchStrategy(searchStrategy: OnlineSearchStrategy): void
+    + fetchResults(criteria: OnlineSearchCriteria): List<?>
+}
+OnlineSearchContext ..> OnlineSearchStrategy :uses
+OnlineSearchContext ..> OnlineResourceFactory :uses
+
+class FavouritesResource {
+    + favouriteAudiobook(audioBookId: String): Response
+    + unfavouriteAudiobook(audioBookId: String): Response
+    + getFavouriteAudiobooks(): Response
+    + favouritePodcast(podcastId: String): Response
+    + unfavouritePodcast(podcastId: String): Response
+    + getFavouritePodcasts(): Response
+}
+FavouritesResource ..> UserPodcastDao :uses
+FavouritesResource ..> UserAudioBookDao :uses
+
+class OnlineIntegrationResource {
+    + connect(service: String, search: String, contentType: String): Response
+}
+OnlineIntegrationResource ..> OnlineSearchContext :uses
+OnlineIntegrationResource ..> OnlineSearchCriteria :uses
+
+' OnlineSearchContext - -> OnlineSearchStrategy
+' OnlineSearchContext - -> OnlineSearchCriteria
+' OnlineSearchStrategy <|.. SpotifyResourceFactory
+' OnlineSearchStrategy <|.. iTunesResourceFactory
+' OnlineSearchCriteria -right-> OnlineSearchContentProvider
+' OnlineSearchCriteria -right-> OnlineSearchContentType
+
+@enduml
+
+@startuml 
+class User {
+
+}
+
+enum OnlineSearchContentType {
+    AUDIO_BOOKS
+    PODCASTS
+}
+
+enum OnlineSearchContentProvider {
+    I_TUNES,
+    SPOTIFY,
+}
+
+class OnlineSearchCriteria {
+    - contentType: OnlineSearchContentType
+    - query: String
+    - provider: OnlineSearchContentProvider
+
+    + getContentType(): OnlineSearchContentType
+    + setContentType(contentType: OnlineSearchContentType): void
+    + getQuery(): String
+    + setQuery(query: String): void
+    + getProvider(): OnlineSearchContentProvider
+    + setProvider(provider: OnlineSearchContentProvider): void
+}
+OnlineSearchCriteria ..> OnlineSearchContentProvider :uses
+OnlineSearchCriteria ..> OnlineSearchContentType :uses
+
+class AudioBook {
+    - id: String
+    - externalId: String
+    - name: String
+    - authors: String
+    - thumbnailUrl: String
+    - description: String
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getAuthors(): String
+    + setAuthors(authors: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDescription(): String
+    + setDescription(description: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+    + getUrl(): String
+    + setUrl(url: String): void
+}
+AudioBook "0..*" - - "0..*" User
+
+class AudioBookDao {
+    + create(audioBook: AudioBook): String
+    + delete(audioBookId: String): void
+    + findById(id: String): AudioBook
+    + findByExternalId(externalId: String): AudioBook
+    + createIfNotExistAndReturn(audioBook: AudioBook): AudioBook
+}
+AudioBookDao ..> AudioBook :uses
+
+class Podcast {
+    - id: String
+    - externalId: String
+    - name: String
+    - thumbnailUrl: String
+    - duration: float
+    - url: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getThumbnailUrl(): String
+    + setThumbnailUrl(thumbnailUrl: String): void
+    + getDuration(): float
+    + setDuration(duration: float): void
+    + getUrl(): String
+    + setUrl(url: String): void
+    + getExternalId(): String
+    + setExternalId(externalId: String): void
+}
+Podcast "0..*" - - "0..*" User
+
+class PodcastDao {
+    + create(podcast: Podcast): String
+    + findById(id: String): Podcast
+    + delete(podcastId: String): void
+    + findByExternalId(externalId: String): Podcast
+    + createIfNotExistAndReturn(podcast: Podcast): Podcast
+}
+PodcastDao ..> Podcast :uses
+
+class UserAudioBook {
+    - id: String
+    - userId: String
+    - audioBookId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getAudioBookId(): String
+    + setAudioBookId(audioBookId: String): void
+}
+User "1" *- - "0..*" UserAudioBook
+AudioBook "1" *- - "0..*" UserAudioBook
+
+class UserAudioBookDao {
+    + create(userAudiobook: UserAudioBook): String
+    + delete(userId: String, audioBookId: String): void
+    + findAudiobooksByUserId(userId: String): List<String>
+}
+UserAudioBookDao ..> UserAudioBook :uses
+
+class UserPodcast {
+    - id: String
+    - userId: String
+    - podcastId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getPodcastId(): String
+    + setPodcastId(podcastId: String): void
+}
+
+User "1" *- - "0..*" UserPodcast
+Podcast "1" *- - "0..*" UserPodcast
+
+class UserPodcastDao {
+    + create(userPodcast: UserPodcast): String
+    + findPodcastsByUserId(userId: String): List<String>
+    + delete(userId: String, podcastId: String): void
+}
+UserPodcastDao ..> UserPodcast :uses
+
+interface OnlineResourceFactory {
+    + createAudioBooks(itemObject: JSONObject): AudioBook
+    + createPodcasts(itemObject: JSONObject): Podcast
+}
+
+class SpotifyResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+SpotifyResourceFactory ..> AudioBook :uses
+SpotifyResourceFactory ..> Podcast :uses
+
+class iTunesResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+iTunesResourceFactory ..> AudioBook :uses
+iTunesResourceFactory ..> Podcast :uses
+
+interface OnlineSearchStrategy {
+  + fetchResults(criteria :OnlineSearchCriteria) :JSONArray
+}
+
+class SpotifySearchStrategy implements OnlineSearchStrategy {
+    - accessToken: String
+    - limit: int
+    - offset: int
+    - market: String
+    - TOKEN_URL: String
+    - CLIENT_ID: String
+    - CLIENT_SECRET: String
+
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+    + obtainAccessToken(): void
+}
+
+class iTunesSearchStrategy implements OnlineSearchStrategy {
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+}
+
+
+class OnlineSearchContext {
+    - searchStrategy: OnlineSearchStrategy
+
+    + setSearchStrategy(searchStrategy: OnlineSearchStrategy): void
+    + fetchResults(criteria: OnlineSearchCriteria): List<?>
+}
+OnlineSearchContext ..> OnlineSearchStrategy :uses
+OnlineSearchContext ..> OnlineResourceFactory :uses
+
+class FavouritesResource {
+    + favouriteAudiobook(audioBookId: String): Response
+    + unfavouriteAudiobook(audioBookId: String): Response
+    + getFavouriteAudiobooks(): Response
+    + favouritePodcast(podcastId: String): Response
+    + unfavouritePodcast(podcastId: String): Response
+    + getFavouritePodcasts(): Response
+}
+FavouritesResource ..> UserPodcastDao :uses
+FavouritesResource ..> UserAudioBookDao :uses
+
+class OnlineIntegrationResource {
+    + connect(service: String, search: String, contentType: String): Response
+}
+OnlineIntegrationResource ..> OnlineSearchContext :uses
+OnlineIntegrationResource ..> OnlineSearchCriteria :uses
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 22:31:30 IST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: IN
+--></g></svg>

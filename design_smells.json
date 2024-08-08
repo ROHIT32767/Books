@@ -1,0 +1,17 @@
+[
+    {
+        "smell name": "Primitive Obsession",
+        "smell description": "The code uses primitive types (e.g., String, Timestamp) directly instead of creating domain-specific classes",
+        "suggested refactoring": "Create domain-specific classes (e.g., UserDto) for the primitive types used in the code"
+    },
+    {
+        "smell name": "Shotgun Surgery",
+        "smell description": "Changes to the domain logic require modifications in multiple methods",
+        "suggested refactoring": "Implement a more cohesive design pattern such as Domain-Driven Design to reduce the need for changes in multiple methods when modifying domain logic"
+    },
+    {
+        "smell name": "Data Clumps",
+        "smell description": "The code passes multiple related data as parameters to methods (e.g., PaginatedList<UserDto>, SortCriteria)",
+        "suggested refactoring": "Encapsulate related data into a single object (e.g., create a class for PaginatedList with user-related attributes) and pass that object as a parameter to methods"
+    }
+]

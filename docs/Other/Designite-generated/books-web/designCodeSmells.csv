@@ -1,0 +1,27 @@
+Project Name,Package Name,Type Name,Code Smell
+books-web,com.sismics.books.rest,TestTagResource,Imperative Abstraction
+books-web,com.sismics.books.rest,TestTagResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestThemeResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestSecurity,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestUserResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestConnectResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestLocaleResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestBookResource,Unutilized Abstraction
+books-web,com.sismics.books.rest,TestAppResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.model,FacebookUser,Deficient Encapsulation
+books-web,com.sismics.books.rest.resource,AppResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,AppResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,ThemeResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,ThemeResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,TagResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,TagResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,BookResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,BookResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,BaseResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,TextPlainMessageBodyWriter,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,LocaleResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,LocaleResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,UserResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,UserResource,Broken Hierarchy
+books-web,com.sismics.books.rest.resource,ConnectResource,Unutilized Abstraction
+books-web,com.sismics.books.rest.resource,ConnectResource,Broken Hierarchy

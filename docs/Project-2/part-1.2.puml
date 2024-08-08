@@ -1,0 +1,45 @@
+@startuml
+autoactivate on
+
+actor User
+participant Website
+participant ":EmailResource"
+participant ":UserCrudResource"
+participant ":UserDao"
+
+activate User
+
+User -> Website :Register
+User <-- Website :Register Page
+User -> Website :Details
+Website -> ":EmailResource" :/check_email
+":EmailResource" -> ":UserDao" :isEmailInUse(email)
+
+alt Not in use
+  ":EmailResource" <-- ":UserDao" :False
+  Website -> ":UserCrudResource" :register()
+  ":UserCrudResource" -> ":UserCrudResource" : Validation
+  ":UserCrudResource" <-- ":UserCrudResource" : Validation Success
+  
+  create ":UserBuilder"
+  ":UserCrudResource" -> ":UserBuilder" :new
+
+  create ":User"
+  ":UserBuilder" -> ":User" :new
+
+  ":UserCrudResource" <-- ":UserBuilder" : :User
+
+  ":UserCrudResource" -> ":UserDao" : :User
+  ":UserCrudResource" <-- ":UserDao" : Success
+  Website <-- ":UserCrudResource" :userId
+  User <-- Website :Success message
+
+else Already in use
+  ":EmailResource" <-- ":UserDao" :True
+  Website <-- ":EmailResource" :Error message
+  User <-- Website :alert
+end
+
+deactivate User
+
+@enduml

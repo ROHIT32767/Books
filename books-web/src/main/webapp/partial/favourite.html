@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Select Content Type</h2>
+    <input type="radio" id="audioBooksRadio" name="contentTypeRadio" ng-click="selectContentType('Audio Books')">
+    <label for="audioBooksRadio">Audio Books</label>
+
+    <input type="radio" id="podcastsRadio" name="contentTypeRadio" ng-click="selectContentType('Podcasts')">
+    <label for="podcastsRadio">Podcasts</label>
+  </div>
+</div>
+
+<div class="row" ng-show="contentType == 'Audio Books' && results.length > 0">
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Un-Favourite</th>
+          <th>Name</th>
+          <th>Artists</th>
+          <th>description</th>
+          <th>Thumbnail</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="audiobook in results">
+          <!-- <td>
+          <i class="fa fa-star" ng-class="{ 'filled': podcast.isFavorite }" ng-click="toggleFavorite(podcast)"></i>
+        </td> -->
+          <td><button type="button" class="btn btn-danger" ng-click="removeFavourite(audiobook.id)">Remove from Fav</button></td>
+          <td>{{ audiobook.name }}</td>
+          <td>{{ audiobook.authors }}</td>
+          <td>{{ audiobook.description }}</td>
+          <td><img src="{{ audiobook.thumbnailUrl }}" height="100" alt="Audio Book Thumbnail"></td>
+          <td><a href="{{ audiobook.url }}">{{ audiobook.url }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row" ng-show="contentType == 'Podcasts' && results.length > 0">
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Favourite</th>
+          <th>Name</th>
+          <th>Thumbnail</th>
+          <th>Duration</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="podcast in results">
+          <!-- <td>
+          <i class="fa fa-star" ng-class="{ 'filled': podcast.isFavorite }" ng-click="toggleFavorite(podcast)"></i>
+        </td> -->
+          <td><button type="button" class="btn btn-danger" ng-click="removeFavourite(podcast.id)">Remove from Fav</button></td>
+          <td>{{ podcast.name }}</td>
+          <td><img src="{{podcast.thumbnailUrl}}" height="100" alt="Podcast Thumbnail"></td>
+          <td>{{ podcast.duration }}</td>
+          <td><a href="{{ podcast.url }}">{{ podcast.url }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<h2>Top Rated Books</h2>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel-body">
+      <form>
+        <div class="form-group">
+          <label for="sortingFilter">Sort By</label>
+          <select id="sortingFilter" class="form-control" ng-model="sortBy">
+              <option value="avgRating">Average</option>
+              <option value="numRating">Count</option>
+          </select>
+      </div>
+      <button type="button" class="btn btn-primary" ng-click="applySortFilters()">Apply Sort Filters</button>
+  </form>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author(s)</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="book in topRatedBooks">
+          <td>{{ book.title }}</td>
+          <td>{{ book.author}}</td>
+          <td>{{ book.avgRating }} ({{book.numRatings}})</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+Project Name,Package Name,Type Name,Method Name,Code Smell
+books-web,com.sismics.books.rest,TestSecurity,testSecurity,Long Identifier
+books-web,com.sismics.books.rest,TestUserResource,testUserResource,Long Method
+books-web,com.sismics.books.rest,TestUserResource,testUserResource,Magic Number
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Method
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestConnectResource,testFacebook,Long Statement
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Long Method
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookImportResource,Long Statement
+books-web,com.sismics.books.rest,TestBookResource,testBookImportResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookImportResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookImportResource,Magic Number
+books-web,com.sismics.books.rest,TestBookResource,testBookImportResource,Magic Number
+books-web,com.sismics.books.rest,TestAppResource,testLogResource,Magic Number
+books-web,com.sismics.books.rest,TestAppResource,testLogResource,Magic Number
+books-web,com.sismics.books.rest.resource,AppResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,AppResource,log,Long Parameter List
+books-web,com.sismics.books.rest.resource,TagResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,TagResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Complex Method
+books-web,com.sismics.books.rest.resource,BookResource,add,Long Parameter List
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,add,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Complex Conditional
+books-web,com.sismics.books.rest.resource,BookResource,update,Complex Conditional
+books-web,com.sismics.books.rest.resource,BookResource,update,Complex Method
+books-web,com.sismics.books.rest.resource,BookResource,update,Long Parameter List
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,cover,Long Statement
+books-web,com.sismics.books.rest.resource,BookResource,cover,Magic Number
+books-web,com.sismics.books.rest.resource,BookResource,list,Long Parameter List
+books-web,com.sismics.books.rest.resource,BookResource,importFile,Empty catch clause
+books-web,com.sismics.books.rest.resource,TextPlainMessageBodyWriter,getSize,Long Parameter List
+books-web,com.sismics.books.rest.resource,TextPlainMessageBodyWriter,writeTo,Long Parameter List
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,register,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Long Parameter List
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Long Parameter List
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,update,Magic Number
+books-web,com.sismics.books.rest.resource,UserResource,info,Long Statement

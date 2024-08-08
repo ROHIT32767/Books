@@ -1,0 +1,188 @@
+@startuml
+
+
+class BookDao {
+    +create(Book book): String
+    +getById(String id): Book
+    +getByIsbn(String isbn): Book
+}
+
+class UserBookCriteria {
+    -userId: String
+    -search: String
+    -read: Boolean
+    -tagIdList: List<String>
+    +getUserId(): String
+    +setUserId(String): void
+    +getSearch(): String
+    +setSearch(String): void
+    +getTagIdList(): List<String>
+    +setTagIdList(List<String>): void
+    +getRead(): Boolean
+    +setRead(Boolean): void
+}
+
+class BookImportedEvent {
+    -user: User
+    -importFile: File
+    +getUser(): User
+    +setUser(User): void
+    +getImportFile(): File
+    +setImportFile(File): void
+}
+
+class BookImportAsyncListener {
+    +on(BookImportedEvent): void
+}
+
+class Book {
+    -id: String
+    -title: String
+    -subtitle: String
+    -author: String
+    -description: String
+    -isbn10: String
+    -isbn13: String
+    -pageCount: Long
+    -language: String
+    -publishDate: Date
+    +getId(): String
+    +setId(String): void
+    +getTitle(): String
+    +setTitle(String): void
+    +getSubtitle(): String
+    +setSubtitle(String): void
+    +getAuthor(): String
+    +setAuthor(String): void
+    +getDescription(): String
+    +setDescription(String): void
+    +getIsbn10(): String
+    +setIsbn10(String): void
+    +getIsbn13(): String
+    +setIsbn13(String): void
+    +getPageCount(): Long
+    +setPageCount(Long): void
+    +getLanguage(): String
+    +setLanguage(String): void
+    +getPublishDate(): Date
+    +setPublishDate(Date): void
+}
+
+class UserBook {
+    -serialVersionUID: long
+    -id: String
+    -bookId: String
+    -userId: String
+    -createDate: Date
+    -deleteDate: Date
+    -readDate: Date
+    +getId(): String
+    +setId(String): void
+    +getBookId(): String
+    +setBookId(String): void
+    +getUserId(): String
+    +setUserId(String): void
+    +getCreateDate(): Date
+    +setCreateDate(Date): void
+    +getDeleteDate(): Date
+    +setDeleteDate(Date): void
+    +getReadDate(): Date
+    +setReadDate(Date): void
+}
+
+class BookDataService {
+    - log: Logger
+    - GOOGLE_BOOKS_SEARCH_FORMAT: String
+    - OPEN_LIBRARY_FORMAT: String
+    -executor: ExecutorService
+    -googleRateLimiter: RateLimiter
+    -openLibraryRateLimiter: RateLimiter
+    -apiKeyGoogle: String
+    +searchBook(String): Book
+    +searchBookWithGoogle(String): Book
+    +searchBookWithOpenLibrary(String): Book
+    +downloadThumbnail(Book, String): void
+    +getExtendedAccessToken(String): String
+    +validatePermission(String): void
+}
+
+abstract class BaseResource {
+    #request: HttpServletRequest
+    #appKey: String
+    #principal: IPrincipal
+    #authenticate(): boolean
+    #checkBaseFunction(BaseFunction): void
+    #hasBaseFunction(BaseFunction): boolean
+}
+
+class BookResource {
+    +add(String): Response
+    +delete(String): Response
+    +addManually(): Response
+    +update(): Response
+    +get(): Response
+    +cover(): Response
+    +updateCover(): Response
+    +list(): Response
+    +importFile(): Response
+    +read(): Response
+}
+
+class UserBookDao {
+    + create(userBook: UserBook): String
+    + delete(id: String): void
+    + getUserBook(userBookId: String, userId: String): UserBook
+    + getUserBook(userBookId: String): UserBook
+    + getByBook(bookId: String, userId: String): UserBook
+    + findByCriteria(paginatedList: PaginatedList<UserBookDto>, criteria: UserBookCriteria, sortCriteria: SortCriteria): void
+}
+
+package com.sismics.books.core.dao.jpa.dto {
+    class UserBookDto {
+        - id: String
+        - title: String
+        - subtitle: String
+        - author: String
+        - language: String
+        - publishTimestamp: Long
+        - createTimestamp: Long
+        - readTimestamp: Long
+
+        {method} + getId(): String
+        {method} + setId(id: String): void
+        {method} + getTitle(): String
+        {method} + setTitle(title: String): void
+        {method} + getSubtitle(): String
+        {method} + setSubtitle(subtitle: String): void
+        {method} + getAuthor(): String
+        {method} + setAuthor(author: String): void
+        {method} + getLanguage(): String
+        {method} + setLanguage(language: String): void
+        {method} + getPublishTimestamp(): Long
+        {method} + setPublishTimestamp(publishTimestamp: Long): void
+        {method} + getCreateTimestamp(): Long
+        {method} + setCreateTimestamp(createTimestamp: Long): void
+        {method} + getReadTimestamp(): Long
+        {method} + setReadTimestamp(readTimestamp: Long): void
+    }
+}
+
+
+
+BookResource "1" --|> "1" BaseResource : "inherits"
+BookDao "1" --> "1..*" Book : "uses"
+UserBook "0..*" --|> "1..*" Book : "composition"
+BookImportAsyncListener "1" --> "1" UserBookDao : "uses for database operations"
+BookImportAsyncListener "1" --> "1" BookDao : "uses for database operations"
+BookImportAsyncListener "1" --> "1" BookImportedEvent : "listens to"
+BookDataService "1" -- "1..*" Book : "returns Book"
+BookResource "1" -- "1..*" BookDao : "uses"
+BookResource "1" -- "1..*" UserBookDao : "uses"
+BookResource "1" -- "1..*" BookImportedEvent : "uses"
+UserBookDao "1" --|> "1..*" UserBook : "composition"
+UserBookDao "1" -- "1..*" UserBookDto : "returns"
+UserBookCriteria "1" --|> "*" Book : "filters"
+UserBookCriteria "1" -- "*" UserBook : "filters"
+
+
+@enduml

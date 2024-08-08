@@ -1,0 +1,178 @@
+@startuml bms
+
+class UserBookCriteria {
+    - userId: String
+    - search: String
+    - read: Boolean
+    - tagIdList: List<String>
+ 
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getSearch(): String
+    + setSearch(search: String): void
+    + getTagIdList(): List<String>
+    + setTagIdList(tagIdList: List<String>): void
+    + getRead(): Boolean
+    + setRead(read: Boolean): void
+}
+
+class TagDto {
+    - id: String
+    - name: String
+    - color: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getColor(): String
+    + setColor(color: String): void
+}
+
+class UserBookDto {
+    - id: String
+    - title: String
+    - subtitle: String
+    - author: String
+    - language: String
+    - publishTimestamp: Long
+    - createTimestamp: Long
+    - readTimestamp: Long
+
+    + getId(): String
+    + setId(id: String): void
+    + getTitle(): String
+    + setTitle(title: String): void
+    + getSubtitle(): String
+    + setSubtitle(subtitle: String): void
+    + getAuthor(): String 
+    + setAuthor(author: String): void
+    + getLanguage(): String
+    + setLanguage(language: String): void
+    + getPublishTimestamp(): Long
+    + setPublishTimestamp(publishTimestamp: Long): void
+    + getCreateTimestamp(): Long
+    + setCreateTimestamp(createTimestamp: Long): void
+    + getReadTimestamp(): Long
+    + setReadTimestamp(readTimestamp: Long): void
+}
+
+class TagDao {
+    + getById(id: String): Tag
+    + getByUserId(userId: String): List<Tag>
+    + updateTagList(userBookId: String, tagIdSet: Set<String>): void
+    + getByUserBookId(userBookId: String): List<TagDto>
+    + create(tag: Tag): String
+    + getByName(userId: String, name: String): Tag
+    + getByTagId(userId: String, tagId: String): Tag
+    + delete(tagId: String): void
+    + findByName(userId: String, name: String): List<Tag>
+}
+
+class UserBookDao {
+    + create(userBook: UserBook): String
+    + delete(id: String): void
+    + getUserBook(userBookId: String, userId: String): UserBook
+    + getUserBook(userBookId: String): UserBook
+    + getByBook(bookId: String, userId: String): UserBook
+    + findByCriteria(paginatedList: PaginatedList<UserBookDto>, criteria: UserBookCriteria, sortCriteria: SortCriteria): void
+}
+
+class SortCriteria {
+    + getSortField(): String
+    + setSortField(sortField: String): void
+    + isAscending(): boolean
+    + setAscending(ascending: boolean): void
+}
+
+class Tag {
+    - id: String
+    - name: String
+    - userId: String
+    - createDate: Date
+    - deleteDate: Date
+    - color: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getName(): String
+    + setName(name: String): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getColor(): String
+    + setColor(color: String): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + toString(): String
+}
+
+class UserBook {
+    - serialVersionUID: long
+    - id: String
+    - bookId: String
+    - userId: String
+    - createDate: Date
+    - deleteDate: Date
+    - readDate: Date
+
+    + getId(): String
+    + setId(id: String): void
+    + getBookId(): String
+    + setBookId(bookId: String): void
+    + getUserId(): String
+    + setUserId(userId: String): void
+    + getCreateDate(): Date
+    + setCreateDate(createDate: Date): void
+    + getDeleteDate(): Date
+    + setDeleteDate(deleteDate: Date): void
+    + getReadDate(): Date
+    + setReadDate(readDate: Date): void
+    + hashCode(): int
+    + equals(obj: Object): boolean
+    + toString(): String
+}
+
+class UserBookTag {
+    - serialVersionUID: long
+    - id: String
+    - userBookId: String
+    - tagId: String
+
+    + getId(): String
+    + setId(id: String): void
+    + getUserBookId(): String
+    + setUserBookId(userBookId: String): void
+    + getTagId(): String
+    + setTagId(tagId: String): void
+    + hashCode(): int
+    + equals(obj: Object): boolean
+    + toString(): String
+}
+
+class LogCriteria {
+    - level: String
+    - tag: String
+    - message: String
+
+    + getLevel(): String
+    + setLevel(level: String): void
+    + getTag(): String
+    + setTag(tag: String): void
+    + getMessage(): String
+    + setMessage(message: String): void
+}
+
+UserBookDao "1" --> "0..*" UserBook : uses
+UserBookDao "1" --> "0..*" UserBookCriteria : filters with
+TagDao "1" --> "0..*" TagDto : produces
+TagDao "1" --> "0..*" Tag : operates on
+UserBookDao "1" --> "0..*" UserBookDto : data transfer
+UserBook "1" *-- "0..*" UserBookTag : contains
+Tag "1" <.. "0..*" UserBookTag : linked by
+UserBookCriteria ..> UserBook : filters
+UserBookDao "1" --> "0..*" SortCriteria : uses for sorting
+TagDao "1" --> "0..*" LogCriteria : uses for logging
+
+@enduml

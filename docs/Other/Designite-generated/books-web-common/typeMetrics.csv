@@ -1,0 +1,17 @@
+Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+books-web-common,com.sismics.books.rest.util,TestValidationUtil,0,0,1,1,23,1,0,0,-1.0,0,1
+books-web-common,com.sismics.books.rest.util,ClientUtil,1,0,6,6,80,8,0,0,0.0,1,1
+books-web-common,com.sismics.books.rest,BaseJerseyTest,2,0,3,3,32,3,0,0,0.6666666666666666,0,2
+books-web-common,com.sismics.books.rest.filter,CookieAuthenticationFilter,1,0,2,2,23,4,0,0,0.0,0,1
+books-web-common,com.sismics.books.rest.descriptor,JerseyTestWebAppDescriptorFactory,1,0,1,1,16,1,0,0,0.0,1,2
+books-web-common,com.sismics.util.filter,RequestContextFilter,1,0,4,4,102,11,0,0,0.75,1,0
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,5,4,6,3,114,15,0,0,0.5,3,2
+books-web-common,com.sismics.security,IPrincipal,0,0,5,4,31,5,2,0,-1.0,0,0
+books-web-common,com.sismics.security,UserPrincipal,6,0,14,14,106,14,0,1,0.42857142857142855,1,0
+books-web-common,com.sismics.security,AnonymousPrincipal,3,1,9,9,52,9,0,1,0.7777777777777778,1,0
+books-web-common,com.sismics.rest.resource,GenericExceptionMapper,1,0,1,1,25,2,0,0,0.0,0,0
+books-web-common,com.sismics.rest.util,JsonUtil,0,0,1,1,33,4,0,0,-1.0,0,0
+books-web-common,com.sismics.rest.util,ValidationUtil,3,0,11,11,188,27,0,0,0.7272727272727273,2,1
+books-web-common,com.sismics.rest.exception,ForbiddenClientException,1,0,1,1,17,1,0,0,0.0,0,0
+books-web-common,com.sismics.rest.exception,ClientException,2,0,2,2,34,2,0,0,1.0,0,0
+books-web-common,com.sismics.rest.exception,ServerException,2,0,2,2,34,2,0,0,1.0,0,0

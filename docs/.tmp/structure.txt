@@ -1,0 +1,225 @@
+.
+├── books-android
+│   ├── app
+│   │   └── src
+│   │       └── main
+│   │           ├── java
+│   │           │   └── com
+│   │           │       └── sismics
+│   │           │           └── books
+│   │           │               ├── activity
+│   │           │               │   ├── BookDetailActivity.java [BADS]
+│   │           │               │   ├── BookListActivity.java [BADS]
+│   │           │               │   └── LoginActivity.java [UMS]
+│   │           │               ├── adapter
+│   │           │               │   └── BooksAdapter.java [BADS]
+│   │           │               ├── fragment
+│   │           │               │   ├── BookDetailFragment.java [BADS]
+│   │           │               │   └── BookListFragment.java [BADS]
+│   │           │               ├── listener
+│   │           │               │   └── CallbackListener.java [NONE]
+│   │           │               ├── MainApplication.java [UMS]
+│   │           │               ├── model
+│   │           │               │   └── ApplicationContext.java [UMS]
+│   │           │               ├── resource
+│   │           │               │   ├── BaseResource.java [NONE]
+│   │           │               │   ├── BookResource.java [BADS]
+│   │           │               │   └── UserResource.java [UMS]
+│   │           │               ├── util
+│   │           │               │   ├── ApplicationUtil.java [NONE]
+│   │           │               │   ├── DialogUtil.java [NONE]
+│   │           │               │   ├── form
+│   │           │               │   │   ├── Validable.java [NONE]
+│   │           │               │   │   ├── validator
+│   │           │               │   │   │   ├── Alphanumeric.java [NONE]
+│   │           │               │   │   │   ├── Email.java [NONE]
+│   │           │               │   │   │   ├── Length.java [NONE]
+│   │           │               │   │   │   ├── Required.java [NONE]
+│   │           │               │   │   │   └── ValidatorType.java [NONE]
+│   │           │               │   │   └── Validator.java [NONE]
+│   │           │               │   └── PreferenceUtil.java [NONE]
+│   │           │               └── zxing
+│   │           │                   ├── IntentIntegrator.java [BADS]
+│   │           │                   └── IntentResult.java [BADS]
+|
+├── books-core
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── sismics
+│   │   │   │           ├── books
+│   │   │   │           │   └── core
+│   │   │   │           │       ├── constant
+│   │   │   │           │       │   ├── AppId.java [BADS]
+│   │   │   │           │       │   ├── ConfigType.java [BADS]
+│   │   │   │           │       │   └── Constants.java [UMS]
+│   │   │   │           │       ├── dao
+│   │   │   │           │       │   ├── file
+│   │   │   │           │       │   │   └── theme
+│   │   │   │           │       │   │       └── ThemeDao.java [NONE]
+│   │   │   │           │       │   └── jpa
+│   │   │   │           │       │       ├── AuthenticationTokenDao.java [UMS]
+│   │   │   │           │       │       ├── BookDao.java [BADS]
+│   │   │   │           │       │       ├── ConfigDao.java [NONE]
+│   │   │   │           │       │       ├── criteria
+│   │   │   │           │       │       │   ├── UserBookCriteria.java [BADS | BMS ?]
+│   │   │   │           │       │       │   └── UserContactCriteria.java [UMS]
+│   │   │   │           │       │       ├── dto
+│   │   │   │           │       │       │   ├── TagDto.java [BMS]
+│   │   │   │           │       │       │   ├── UserAppDto.java [UMS]
+│   │   │   │           │       │       │   ├── UserBookDto.java [BMS]
+│   │   │   │           │       │       │   ├── UserContactDto.java [UMS]
+│   │   │   │           │       │       │   └── UserDto.java [UMS]
+│   │   │   │           │       │       ├── LocaleDao.java [NONE]
+│   │   │   │           │       │       ├── RoleBaseFunctionDao.java [NONE]
+│   │   │   │           │       │       ├── TagDao.java [BMS]
+│   │   │   │           │       │       ├── UserAppDao.java [UMS]
+│   │   │   │           │       │       ├── UserBookDao.java [BMS]
+│   │   │   │           │       │       ├── UserContactDao.java [UMS]
+│   │   │   │           │       │       └── UserDao.java [UMS]
+│   │   │   │           │       ├── event
+│   │   │   │           │       │   ├── BookImportedEvent.java [BADS]
+│   │   │   │           │       │   └── UserAppCreatedEvent.java [UMS]
+│   │   │   │           │       ├── listener
+│   │   │   │           │       │   ├── async
+│   │   │   │           │       │   │   ├── BookImportAsyncListener.java [BADS ?]
+│   │   │   │           │       │   │   └── UserAppCreatedAsyncListener.java [BADS ?]
+│   │   │   │           │       │   └── sync
+│   │   │   │           │       │       └── DeadEventListener.java
+│   │   │   │           │       ├── model
+│   │   │   │           │       │   ├── context
+│   │   │   │           │       │   │   └── AppContext.java [NONE]
+│   │   │   │           │       │   └── jpa
+│   │   │   │           │       │       ├── App.java [NONE]
+│   │   │   │           │       │       ├── AuthenticationToken.java [UMS]
+│   │   │   │           │       │       ├── BaseFunction.java [UMS ?]
+│   │   │   │           │       │       ├── Book.java [BADS]
+│   │   │   │           │       │       ├── Config.java [NONE]
+│   │   │   │           │       │       ├── Locale.java [NONE]
+│   │   │   │           │       │       ├── RoleBaseFunction.java [UMS]
+│   │   │   │           │       │       ├── Role.java [UMS]
+│   │   │   │           │       │       ├── Tag.java [BMS]
+│   │   │   │           │       │       ├── UserApp.java [UMS]
+│   │   │   │           │       │       ├── UserBook.java [BADS | BMS ?]
+│   │   │   │           │       │       ├── UserBookTag.java [BMS]
+│   │   │   │           │       │       ├── UserContact.java [UMS]
+│   │   │   │           │       │       └── User.java [UMS]
+│   │   │   │           │       ├── service
+│   │   │   │           │       │   ├── BookDataService.java [BADS]
+│   │   │   │           │       │   ├── facebook
+│   │   │   │           │       │   │   ├── AuthenticationException.java [UMS]
+│   │   │   │           │       │   │   └── PermissionException.java [UMS]
+│   │   │   │           │       │   └── FacebookService.java [BADS | UMS ?]
+│   │   │   │           │       └── util
+│   │   │   │           │           ├── ConfigUtil.java [NONE]
+│   │   │   │           │           ├── DirectoryUtil.java [NONE]
+│   │   │   │           │           ├── EntityManagerUtil.java [NONE]
+│   │   │   │           │           ├── jpa
+│   │   │   │           │           │   ├── PaginatedList.java [NONE]
+│   │   │   │           │           │   ├── PaginatedLists.java [NONE]
+│   │   │   │           │           │   ├── QueryParam.java [NONE]
+│   │   │   │           │           │   ├── QueryUtil.java [NONE]
+│   │   │   │           │           │   └── SortCriteria.java [NONE]
+│   │   │   │           │           ├── math
+│   │   │   │           │           │   └── MathUtil.java [NONE]
+│   │   │   │           │           ├── mime
+│   │   │   │           │           │   ├── MimeType.java [NONE]
+│   │   │   │           │           │   └── MimeTypeUtil.java [NONE]
+│   │   │   │           │           ├── StreamUtil.java [NONE]
+│   │   │   │           │           └── TransactionUtil.java [NONE]
+│   │   │   │           └── util
+│   │   │   │               ├── context
+│   │   │   │               │   └── ThreadLocalContext.java [NONE]
+│   │   │   │               ├── EnvironmentUtil.java [NONE]
+│   │   │   │               ├── HttpUtil.java [NONE]
+│   │   │   │               ├── jpa
+│   │   │   │               │   ├── DbOpenHelper.java [NONE]
+│   │   │   │               │   ├── EMF.java [NONE]
+│   │   │   │               │   ├── ManagedProvidedConnectionHelper.java [NONE]
+│   │   │   │               │   ├── SessionUtil.java [NONE]
+│   │   │   │               │   └── SuppliedConnectionProviderConnectionHelper.java [NONE]
+│   │   │   │               ├── LocaleUtil.java [NONE]
+│   │   │   │               ├── log4j
+│   │   │   │               │   ├── LogCriteria.java [BMS | NONE]
+│   │   │   │               │   ├── LogEntry.java [BMS | NONE ]
+│   │   │   │               │   └── MemoryAppender.java [NONE | BMS]
+│   │   │   │               └── ResourceUtil.java [NONE]
+|   |
+|
+├── books-web
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── sismics
+│   │   │   │           └── books
+│   │   │   │               └── rest
+│   │   │   │                   ├── constant
+│   │   │   │                   │   └── BaseFunction.java [NONE]
+│   │   │   │                   └── resource
+│   │   │   │                       ├── AppResource.java [NONE]
+│   │   │   │                       ├── BaseResource.java [UMS]
+│   │   │   │                       ├── BookResource.java [BADS]
+│   │   │   │                       ├── ConnectResource.java [NONE]
+│   │   │   │                       ├── LocaleResource.java [NONE]
+│   │   │   │                       ├── TagResource.java [BMS]
+│   │   │   │                       ├── TextPlainMessageBodyWriter.java [NONE]
+│   │   │   │                       ├── ThemeResource.java [NONE]
+│   │   │   │                       └── UserResource.java [UMS]
+│   │   │   └── webapp
+│   │   │       ├── app
+│   │   │       │   ├── app.js
+│   │   │       │   ├── controller
+│   │   │       │   │   ├── BookAdd.js [BADS]
+│   │   │       │   │   ├── BookAddManual.js [BADS]
+│   │   │       │   │   ├── BookEdit.js [BADS]
+│   │   │       │   │   ├── Book.js [BADS]
+│   │   │       │   │   ├── BookView.js [BADS]
+│   │   │       │   │   ├── Login.js [UMS] [DONE-1]
+│   │   │       │   │   ├── Main.js [BADS & UMS]
+│   │   │       │   │   ├── Navigation.js [NONE]
+│   │   │       │   │   ├── SettingsAccount.js [UMS] [DONE-1]
+│   │   │       │   │   ├── SettingsDefault.js [UMS]
+│   │   │       │   │   ├── Settings.js
+│   │   │       │   │   ├── SettingsLog.js [UMS | NONE]
+│   │   │       │   │   ├── SettingsSession.js [UMS] [DONE-1]
+│   │   │       │   │   ├── SettingsUserEdit.js [UMS]
+│   │   │       │   │   ├── SettingsUser.js [UMS] [DONE-1]
+│   │   │       │   │   └── Tag.js [DOING]
+│   │   │       │   ├── directive
+│   │   │       │   │   ├── File.js [NONE]
+│   │   │       │   │   ├── InfiniteLoad.js [NONE]
+│   │   │       │   │   └── InlineEdit.js [NONE]
+│   │   │       │   ├── filter
+│   │   │       │   │   └── Newline.js [NONE]
+│   │   │       │   └── service
+│   │   │       │       └── User.js [UMS]
+|
+├── books-web-common
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   └── java
+│   │   │       └── com
+│   │   │           └── sismics
+│   │   │               ├── rest
+│   │   │               │   ├── exception
+│   │   │               │   │   ├── ClientException.java [NONE]
+│   │   │               │   │   ├── ForbiddenClientException.java [NONE]
+│   │   │               │   │   └── ServerException.java [NONE]
+│   │   │               │   ├── resource
+│   │   │               │   │   └── GenericExceptionMapper.java [NONE]
+│   │   │               │   └── util
+│   │   │               │       ├── JsonUtil.java [NONE]
+│   │   │               │       └── ValidationUtil.java [NONE]
+│   │   │               ├── security
+│   │   │               │   ├── AnonymousPrincipal.java [UMS ?]
+│   │   │               │   ├── IPrincipal.java [UMS ?]
+│   │   │               │   └── UserPrincipal.java [UMS ?]
+│   │   │               └── util
+│   │   │                   └── filter
+│   │   │                       ├── RequestContextFilter.java [NONE]
+│   │   │                       └── TokenBasedSecurityFilter.java [UMS]

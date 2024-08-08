@@ -1,0 +1,19 @@
+Project Name,Package Name,Type Name,NOF,NOPF,NOM,NOPM,LOC,WMC,NC,DIT,LCOM,FANIN,FANOUT
+books-web,com.sismics.books.rest,TestTagResource,0,0,1,1,96,1,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestThemeResource,0,0,1,1,19,1,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestSecurity,0,0,1,1,47,1,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestUserResource,0,0,2,2,230,2,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestConnectResource,0,0,2,2,148,2,0,0,-1.0,0,1
+books-web,com.sismics.books.rest,TestLocaleResource,0,0,1,1,19,1,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestBookResource,0,0,2,2,196,2,0,0,-1.0,0,0
+books-web,com.sismics.books.rest,TestAppResource,0,0,2,2,61,2,0,0,-1.0,0,0
+books-web,com.sismics.books.rest.model,FacebookUser,4,4,1,1,16,1,0,0,0.0,1,0
+books-web,com.sismics.books.rest.resource,AppResource,0,0,3,3,85,8,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,ThemeResource,0,0,1,1,24,2,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,TagResource,0,0,4,4,112,17,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,BookResource,0,0,10,10,445,66,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,BaseResource,3,0,3,0,55,6,7,0,0.0,0,0
+books-web,com.sismics.books.rest.resource,TextPlainMessageBodyWriter,0,0,3,3,22,3,0,0,-1.0,0,0
+books-web,com.sismics.books.rest.resource,LocaleResource,0,0,1,1,24,2,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,UserResource,0,0,13,13,392,56,0,1,-1.0,0,0
+books-web,com.sismics.books.rest.resource,ConnectResource,0,0,6,5,172,16,0,1,-1.0,0,0

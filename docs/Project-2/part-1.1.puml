@@ -1,0 +1,33 @@
+@startuml
+autoactivate on
+
+actor User
+actor Admin
+participant Website
+participant ":UserCrudResource"
+participant ":UserDao"
+
+User -> Admin :Physically ask for registration
+Admin -> Website :Login
+Admin <-- Website :Login Page
+Admin -> Website :Settings
+Admin <-- Website :Settings Page
+Admin -> Website :User.Add
+Admin <-- Website :User.Add
+Admin -> Website :Register
+Website -> ":UserCrudResource" :register()
+
+":UserCrudResource" -> ":UserCrudResource" : Check Admin privilege
+":UserCrudResource" <-- ":UserCrudResource" : Success
+
+create ":User"
+":UserCrudResource" -> ":User" :new
+
+":UserCrudResource" -> ":UserDao" : :User
+":UserCrudResource" <-- ":UserDao" : Success
+
+Website <-- ":UserCrudResource" :userId
+Admin <-- Website :Success message
+User <-- Admin :Physically notify about success
+
+@enduml

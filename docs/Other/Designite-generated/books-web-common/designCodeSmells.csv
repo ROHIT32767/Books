@@ -1,0 +1,14 @@
+Project Name,Package Name,Type Name,Code Smell
+books-web-common,com.sismics.books.rest.util,TestValidationUtil,Unutilized Abstraction
+books-web-common,com.sismics.books.rest,BaseJerseyTest,Unutilized Abstraction
+books-web-common,com.sismics.books.rest.filter,CookieAuthenticationFilter,Unutilized Abstraction
+books-web-common,com.sismics.util.filter,TokenBasedSecurityFilter,Deficient Encapsulation
+books-web-common,com.sismics.security,IPrincipal,Unutilized Abstraction
+books-web-common,com.sismics.security,UserPrincipal,Unutilized Abstraction
+books-web-common,com.sismics.security,AnonymousPrincipal,Unutilized Abstraction
+books-web-common,com.sismics.security,AnonymousPrincipal,Deficient Encapsulation
+books-web-common,com.sismics.rest.resource,GenericExceptionMapper,Unutilized Abstraction
+books-web-common,com.sismics.rest.util,JsonUtil,Unutilized Abstraction
+books-web-common,com.sismics.rest.exception,ForbiddenClientException,Unutilized Abstraction
+books-web-common,com.sismics.rest.exception,ClientException,Unutilized Abstraction
+books-web-common,com.sismics.rest.exception,ServerException,Unutilized Abstraction

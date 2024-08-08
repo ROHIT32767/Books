@@ -1,0 +1,45 @@
+<div class="row" ng-show="commonbook">
+  <div class="col-md-12">
+  </div>
+</div>
+
+<div class="row" ng-show="commonbook">
+  <div class="col-md-12">
+    <h2>{{ commonbook.title }} {{ commonbook.subtitle }} <small>{{ commonbook.author }}</small></h2>
+
+    <p class="pull-left">
+      <img ng-if="commonbook && !coverChanging" ng-src="api/commonbook/{{ commonbook.id }}/cover" class="cover-book-view" ng-click="editCover()" />
+      <img src="img/loader.gif" ng-if="coverChanging" />
+    </p>
+    <p class="clearfix">{{ commonbook.description }}</p>
+
+    <dl class="dl-horizontal">
+      <dt>Publication date</dt>
+      <dd>{{ commonbook.publishTime | date: 'yyyy' }}</dd>
+      <dt>ISBN 10</dt>
+      <dd>{{ commonbook.isbn10 }}</dd>
+      <dt>ISBN 13</dt>
+      <dd>{{ commonbook.isbn13 }}</dd>
+      <dt>Number of pages</dt>
+      <dd>{{ commonbook.pageCount }}</dd>
+      <dt>Rating</dt>
+      <dd>{{ commonbook.avgRating }} ({{commonbook.numRatings}})</dd>
+      <dt>Genre(s)</dt>
+      <dd>{{ commonbook.genre }}</dd>
+      <dt ng-if="commonbook.language">Language</dt>
+      <dd ng-if="commonbook.language"><img ng-src="img/flags/{{ commonbook.language }}.png" /></dd>
+
+      <dt>Add Rating</dt>
+      <dd><input type="number" min="1" max="10" ng-model="commonbook.rating" /></dd>
+    </dl>
+
+    <div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger" ng-click="deleteBook()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        <button type="button" class="btn btn-primary" ng-click="editBook()"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+        <button type="button" class="btn btn-success" ng-click="submitRating()" style="margin-left: 10px;"><span class="glyphicon glyphicon-star"></span> Submit Rating</button>
+        <button type="button" class="btn btn-primary" ng-click="goBack()" style="margin-left: 10px;"></span> Back</button>
+      </div>
+    </div>
+  </div>
+</div>

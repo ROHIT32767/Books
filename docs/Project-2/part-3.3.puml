@@ -1,0 +1,49 @@
+@startuml
+
+interface OnlineSearchStrategy {
+  + fetchResults(criteria :OnlineSearchCriteria) :JSONArray
+}
+
+class SpotifySearchStrategy implements OnlineSearchStrategy {
+    - accessToken: String
+    - limit: int
+    - offset: int
+    - market: String
+    - TOKEN_URL: String
+    - CLIENT_ID: String
+    - CLIENT_SECRET: String
+
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+    + obtainAccessToken(): void
+}
+
+class iTunesSearchStrategy implements OnlineSearchStrategy {
+    + encodeQuery(query: String): String
+    + fetchResults(criteria: OnlineSearchCriteria): JSONArray
+    + performHttpRequest(url: String): String
+}
+
+class OnlineSearchContext {
+    - searchStrategy: OnlineSearchStrategy
+
+    + setSearchStrategy(searchStrategy: OnlineSearchStrategy): void
+    + fetchResults(criteria: OnlineSearchCriteria): List<?>
+}
+OnlineSearchContext ..> OnlineSearchStrategy :uses
+
+note right of OnlineSearchContext
+    private OnlineSearchStrategy searchStrategy;
+
+    public void setSearchStrategy(OnlineSearchStrategy searchStrategy) {
+        this.searchStrategy = searchStrategy;
+    }
+
+    public List<?> fetchResults(OnlineSearchCriteria criteria) {
+        JSONArray resultItems = this.searchStrategy.fetchResults(criteria);
+
+        // Factory Logic for creating AudioBook and Podcast object goes here.
+    }
+end note
+@enduml

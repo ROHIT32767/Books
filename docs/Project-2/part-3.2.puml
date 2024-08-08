@@ -1,0 +1,63 @@
+@startuml
+class OnlineSearchContext {
+    - searchStrategy: OnlineSearchStrategy
+
+    + setSearchStrategy(searchStrategy: OnlineSearchStrategy): void
+    + fetchResults(criteria: OnlineSearchCriteria): List<?>
+}
+OnlineSearchContext ..> OnlineResourceFactory :uses
+
+note right of OnlineSearchContext::fetchResults
+    OnlineResourceFactory factory = null;
+    if (criteria.getProvider() == OnlineSearchContentProvider.SPOTIFY) {
+        factory = new SpotifyResourceFactory();
+    } else if (criteria.getProvider() == OnlineSearchContentProvider.I_TUNES) {
+        factory = new iTunesResourceFactory();
+    } else {
+        throw new IllegalArgumentException("Unsupported onlince provider");
+    }
+
+    if(criteria.getContentType() == OnlineSearchContentType.AUDIO_BOOKS){
+        List<AudioBook> results = new ArrayList<>();
+        for (int i = 0; i < resultItems.length(); i++) {
+            JSONObject itemObject = resultItems.getJSONObject(i);
+            
+            AudioBook item = factory.createAudioBooks(itemObject);
+            results.add(item);
+        }
+        return results;
+    } else if (criteria.getContentType() == OnlineSearchContentType.PODCASTS){
+        List<Podcast> results = new ArrayList<>();
+        for (int i = 0; i < resultItems.length(); i++) {
+            JSONObject itemObject = resultItems.getJSONObject(i);
+            
+            Podcast item = factory.createPodcasts(itemObject);
+            results.add(item);
+        }
+        return results;
+    } else {
+        // Handle the case where content type is not recognized
+        throw new IllegalArgumentException("Unsupported content type");
+    }    
+end note
+
+
+interface OnlineResourceFactory {
+    + createAudioBooks(itemObject: JSONObject): AudioBook
+    + createPodcasts(itemObject: JSONObject): Podcast
+}
+
+class SpotifyResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+SpotifyResourceFactory ..> AudioBook :uses
+SpotifyResourceFactory ..> Podcast :uses
+
+class iTunesResourceFactory implements OnlineResourceFactory {
+  + createAudioBooks(itemObject: JSONObject): AudioBook
+  + createPodcasts(itemObject: JSONObject): Podcast
+}
+iTunesResourceFactory ..> AudioBook :uses
+iTunesResourceFactory ..> Podcast :uses
+@enduml

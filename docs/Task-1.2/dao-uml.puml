@@ -1,0 +1,19 @@
+@startuml dao-class-diagram
+
+class AuthenticationTokenDao {
+    + get(id: String): AuthenticationToken
+    + create(authenticationToken: AuthenticationToken): String
+    + delete(authenticationTokenId: String): void
+    + deleteOldSessionToken(userId: String): void
+    + updateLastConnectionDate(id: String): void
+    + getByUserId(userId: String): List<AuthenticationToken>
+    + deleteByUserId(userId: String, id: String): void
+}
+
+class BookDao {
+    +create(book: Book): String
+    +getById(id: String): Book
+    +getByIsbn(isbn: String): Book
+}
+
+@enduml

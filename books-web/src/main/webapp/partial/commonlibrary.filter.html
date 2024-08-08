@@ -1,0 +1,57 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title">Filter Books</h3>
+  </div>
+  <div class="panel-body">
+      <form>
+          <div class="form-group">
+              <label for="authorFilter">Authors:</label>
+              <input type="text" id="authorFilter" class="form-control" ng-model="authorInput" placeholder="Type author name...">
+          </div>
+          <div class="form-group">
+              <label for="genreFilter">Genres:</label>
+              <input type="text" id="genreFilter" class="form-control" ng-model="genreInput" placeholder="Type genre...">
+          </div>
+          <div class="form-group">
+              <label for="ratingFilter">Rating:</label>
+              <select id="ratingFilter" class="form-control" ng-model="selectedRating">
+                  <option value="6">Rating > 6</option>
+                  <option value="7">Rating > 7</option>
+                  <option value="8">Rating > 8</option>
+                  <option value="9">Rating > 9</option>
+              </select>
+          </div>
+          <button type="button" class="btn btn-primary" ng-click="applyFilters()">Apply Filters</button>
+      </form>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 book" ng-repeat="commonBook in filterBooks">
+                <a href="#/commonbook/view/{{ commonBook.id }}" class="thumbnail">
+                  <div class="image">
+                    <img ng-src="api/book/{{ commonBook.bookId }}/cover" title="{{ commonBook.title }}" />
+                  </div>
+                  <div class="caption">
+        
+                    <p class="text-primary text-center">Title: {{ commonBook.title }}</p>
+                    <p class="text-muted text-center">Author: {{ commonBook.author }}</p>
+                    <p class="text-primary text-center">Rating: {{commonBook.avgRating}} ({{commonBook.numRatings}})</p>
+                    <p class="text-primary text-center">Genre: {{commonBook.genre}}</p>
+                  </div>
+                </a>
+              </div>
+        
+              <div class="col-md-12 text-center" ng-show="!loading && commonBooks.length == 0">
+                No common book
+              </div>
+        
+              <div class="col-md-12 text-center" ng-show="loading">
+                <img src="img/loader.gif" />
+              </div>
+          </div>
+    </div>
+</div>
