@@ -42,7 +42,6 @@ load_dotenv()
 config = dotenv_values(".env")
 client = OpenAI(api_key=os.environ.get(config['OPENAI_API_KEY']))
 
-github_token = ''
 file_path = 'books-core/src/main/java/com/sismics/books/core/dao/jpa/UserDao.java'
 repo_url = 'https://github.com/serc-courses/se-project-1--_18'
 repo_owner = 'serc-courses'
@@ -257,7 +256,7 @@ Overall, the script automates the process of identifying design smells, refactor
 ## Pull Request Generation:
 
 ```bash
-curl -L   -X POST   -H "Accept: application/vnd.github+json"   -H "Authorization: Bearer {}"   -H "X-GitHub-Api-Version: 2022-11-28"   https://api.github.com/repos/serc-courses/se-project-1--_18/pulls   -d "{'title': 'Automated Refactoring: Inappropriate Intimacy', 'body': '# Smell description\nThe UserDao class is tightly coupled with the EntityManager class, making it difficult to change the persistence mechanism in the future\n\n# Refactoring: \nRefactor the UserDao class to use a separate Data Access Object \(DAO\) class for handling persistence operations\\n', 'head': 'Inappropriate-Intimacy-223', 'base': 'master'}"
+curl -X POST -H "Authorization: token <your_token>" -d '{"title": "Automated Refactoring: Primitive Obsession", "body": "# Smell description\nThe code uses primitive types (e.g., String, Timestamp) directly instead of creating domain-specific classes\n\n# Refactoring\nCreate domain-specific classes (e.g., UserDto) for the primitive types used in the code", "head": "primitive-obsession-123", "base": "master"}' https://api.github.com/repos/serc-courses/se-project-1--_18/pulls
 ```
 
 #### We have developed a mechanism to automatically create pull requests with refactored code changes based on detected design smells and applied refactoring techniques. However, despite our efforts, we encountered permission errors when attempting to execute the pull request generation process.
